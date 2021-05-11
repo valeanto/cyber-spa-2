@@ -23,6 +23,8 @@ body {
   height: 200px;
   display: flex;
   justify-content: center;
+  /* border: 1px solid black; */
+  width: 500px;
 }
 .landing-link img {
   object-fit: contain;
@@ -30,18 +32,48 @@ body {
 }
 .landing-link img:nth-child(1) {
   position: absolute;
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transition: opacity 0.9;
+
   /* top:0; */
 }
 .landing-link:hover img:nth-child(1) {
-  display: none;
+  opacity: 0;
 }
 .landing-link img:nth-child(2) {
   position: absolute;
-  display: none;
+  opacity: 0;
 }
 .landing-link:hover img:nth-child(2) {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+}
+.star {
+  position: absolute;
+  animation: star-glow 0.8s infinite alternate ease-in-out;
+}
+#star-top {
+  animation: star-glow 0.8s infinite alternate ease-in-out;
+  height: 80px;
+  top: -20px;
+  left: 0;
+}
+
+#star-right {
+  height: 80px;
+  top: -20px;
+  right: 50px;
+  animation-delay: 0.4s;
+}
+
+@keyframes star-glow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .to-button-quiz {
