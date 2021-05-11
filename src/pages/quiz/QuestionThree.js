@@ -27,8 +27,12 @@ export default function QuestionThree() {
             <h1>exhale</h1>
           </div>
           <div className="row">
-            <h1> heart</h1>
-            <h1>Me</h1>
+            <Link to="question-four">
+              <h1> heart</h1>
+            </Link>
+            <Link to="question-four">
+              <h1>Me</h1>
+            </Link>
           </div>
           <div className="row">
             <h1>playa</h1>

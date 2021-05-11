@@ -106,7 +106,7 @@
     justify-content: space-around;
   }
   .row:hover {
-    filter: invert(1);
+    /* filter: invert(1); */
   }
   .row h1 {
     /* margin:0 4rem; */
