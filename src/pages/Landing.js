@@ -28,9 +28,9 @@ export default function Landing() {
         <img src={starImage} alt="" className="star" id="star-two" />
         <img src={starImage} alt="" className="star" id="star-three" />
         <img src={starImage} alt="" className="star" id="star-four" />
-        <img src={starImage} alt="" className="star" id="star-five" />
+        {/* <img src={starImage} alt="" className="star" id="star-five" />
         <img src={starImage} alt="" className="star" id="star-six" />
-        <img src={starImage} alt="" className="star" id="star-seven" />
+        <img src={starImage} alt="" className="star" id="star-seven" /> */}
       </Link>
       <div className="landing_footer">
         <div className="item">

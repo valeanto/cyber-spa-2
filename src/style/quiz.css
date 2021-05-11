@@ -1,233 +1,231 @@
 .questionContainer {
-    /* border: 1px solid black; */
-    position: relative;
-    text-align: center;
-    height: 100%;
-  }
-  .react-player {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .quiz-video {
-    /* border: 1px solid blue; */
-    z-index: -100;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    transform: none;
-  }
-  .questionContainer h1 {
-    color: white;
-    text-align: center;
-  }
-  /* QUESTION 1 */
-  .q1_title {
-    z-index: 10;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
-  .q2_title {
-    z-index: 10;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    transform: scale(0.8) translateY(-180px) translateX(50px);
-  }
-  .questionTwo_container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transform: translateY(-50px);
-    left: 0;
-  }
-  .q2_container {
-    transform: translateY(-20px);
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-  }
-  /* QUESTION TWO */
-  .q2_item {
-    z-index: 20;
-    animation: float 1s infinite alternate ease-in-out;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    width: 300px;
-    margin: 0 1rem;
-    position: relative;
-    /* background-color: white; */
-  }
-  .q2_item:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  .q2_item:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .q2_item .first-image {
-    position: absolute;
-    width: 100%;
-    /* border: 1px solid pink; */
-    display: block;
-    bottom: 0;
-  }
-  .q2_item img {
-    transform: translateY(-200px) scale(1.8);
-  }
-  .q2_item .video-image {
-    /* border: 1px solid green; */
-    z-index: 5;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: none;
-  }
-  .q2_item:hover .first-image {
-    /* display: none; */
-  }
-  .q2_item:hover .video-image {
-    display: block;
-  }
-  /* QUESTION THREE */
-  .q3_title {
+  /* border: 1px solid black; */
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.react-player {
+  width: 100% !important;
+  height: 100% !important;
+}
+.quiz-video {
+  /* border: 1px solid blue; */
+  z-index: -100;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+.questionContainer h1 {
+  color: white;
+  text-align: center;
+}
+/* QUESTION 1 */
+.q1_title {
+  z-index: 10;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.q2_title {
+  z-index: 10;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8) translateY(-180px) translateX(50px);
+}
+.questionTwo_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50px);
+  left: 0;
+}
+.q2_container {
+  transform: translateY(-20px);
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+/* QUESTION TWO */
+.q2_item {
+  z-index: 20;
+  animation: float 1s infinite alternate ease-in-out;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 300px;
+  margin: 0 1rem;
+  position: relative;
+  /* background-color: white; */
+}
+.q2_item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.q2_item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.q2_item .first-image {
+  position: absolute;
+  width: 100%;
+  /* border: 1px solid pink; */
+  display: block;
+  bottom: 0;
+}
+.q2_item img {
+  transform: translateY(-200px) scale(1.8);
+}
+.q2_item .video-image {
+  /* border: 1px solid green; */
+  z-index: 5;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+.q2_item:hover .first-image {
+  /* display: none; */
+}
+.q2_item:hover .video-image {
+  display: block;
+}
+/* QUESTION THREE */
+.q3_title {
+  z-index: 10;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-60px) scale(0.8);
+}
+.q3_content {
+  width: 100%;
+  position: relative;
+  bottom: 16rem;
+  border-bottom: 1px solid white;
+}
+.row {
+  z-index: 20;
+  border-top: 1px solid white;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+}
+.row:hover {
+  /* filter: invert(1); */
+}
+.row h1 {
+  /* margin:0 4rem; */
+}
 
-    z-index: 10;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-60px) scale(0.8);
-  }
-  .q3_content {
-    width: 100%;
-    position: relative;
-    bottom: 16rem;
-    border-bottom: 1px solid white;
-  }
-  .row {
-    z-index: 20;
-    border-top: 1px solid white;
-    display: flex;
-    height: 80px;
-    justify-content: space-around;
-  }
-  .row:hover {
-    /* filter: invert(1); */
-  }
-  .row h1 {
-    /* margin:0 4rem; */
-  }
-  
-  /* QUESTION FOUR */
-  .contentFour{
-    transform: translateY(-200px);
-  }
-  .door-container {
-    display: flex;
-    justify-content: center;
-    perspective: 800px;
-  }
-  .door {
-    /* border: 1px solid black; */
-    height: 500px;
-    width: 300px;
-    margin: 0 1rem;
-    transition: transform 0.3s;
-  }
-  .door img {
-    height: 100%;
-    object-fit: contain;
-    width: 100%;
-  }
-  .door:hover {
-    transform: rotateY(45deg);
-  }
-  .door:focus {
-    transform: rotateY(90deg);
-  }
-  .questionThree_container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+/* QUESTION FOUR */
+.contentFour {
+  transform: translateY(-200px);
+}
+.door-container {
+  display: flex;
+  justify-content: center;
+  perspective: 800px;
+}
+.door {
+  /* border: 1px solid black; */
+  height: 500px;
+  width: 300px;
+  margin: 0 1rem;
+  transition: transform 0.3s;
+}
+.door img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.door:hover {
+  transform: rotateY(45deg);
+}
+.door:focus {
+  transform: rotateY(90deg);
+}
+.questionThree_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-  .title_container {
-    position: absolute;
-    width: 100%;
-  }
-  .question_title {
-    z-index: 10;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    transform: translateY(-180px) translateX(50px);
-  }
-  
-  .q1_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  input {
-    z-index: 10;
-    color: white;
-    font-family: "AL";
-    font-size: 20px;
-    width: 300px;
-  }
-  .q1_text[type="text"] {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-  }
-  
-  .q1_text::placeholder {
-    color: white;
-    padding-bottom: 1rem;
-  }
-  input.middle:focus {
-    outline-width: 0;
-  }
-  input:focus {
-    outline: none;
-  }
-  
-  input,
-  select,
-  textarea {
-    color: white;
-    opacity: 0.7;
-    font-family: "AL";
-  }
-  
-  .bg-placeholder {
-    border: 2px solid pink;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-  }
-  .retreatLogo {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
-    position: absolute;
-  }
-  
+.title_container {
+  position: absolute;
+  width: 100%;
+}
+.question_title {
+  z-index: 10;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-180px) translateX(50px);
+}
+
+.q1_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input {
+  z-index: 10;
+  color: white;
+  font-family: "AL";
+  font-size: 20px;
+  width: 300px;
+}
+.q1_text[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.q1_text::placeholder {
+  color: white;
+  padding-bottom: 1rem;
+}
+input.middle:focus {
+  outline-width: 0;
+}
+input:focus {
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  color: white;
+  opacity: 0.7;
+  font-family: "AL";
+}
+
+.bg-placeholder {
+  border: 2px solid pink;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.retreatLogo {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
+}
