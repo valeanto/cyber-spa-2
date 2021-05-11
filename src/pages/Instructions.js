@@ -1,7 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-
 import instructionsVideo from "../images/bg/background.mp4";
 
 export default function Instructions() {
@@ -16,7 +15,7 @@ export default function Instructions() {
         loop={true}
         playing={true}
       />
-      <Link to="/quiz" className="to-button-quiz float">
+      <Link to="/question-one" className="to-button-quiz float">
         Lets begin
       </Link>
     </div>
