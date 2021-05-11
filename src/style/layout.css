@@ -1,11 +1,11 @@
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
 .background-landing {
-  height: 100%;
+  width: 100%;
   border: 2px solid pink;
   position: relative;
 }
@@ -53,18 +53,57 @@ body {
   position: absolute;
   animation: star-glow 0.8s infinite alternate ease-in-out;
 }
-#star-top {
-  animation: star-glow 0.8s infinite alternate ease-in-out;
+
+#star-one  {
+  height: 80px;
+  bottom: -20px;
+  left: 50px;
+  animation-delay: 0.4s;
+  /* border: 1px solid blue; */
+}
+#star-two  {
+  height: 60px;
+  bottom: -40px;
+  right: 50px;
+  animation-delay: 0.2s;
+  /* border: 1px solid blue; */
+}
+#star-three  {
+  height: 80px;
+  bottom: -20px;
+  right: 100px;
+  animation-delay: 0.1s;
+  /* border: 1px solid green; */
+}
+#star-four {
   height: 80px;
   top: -20px;
-  left: 0;
+  right: 100px;
+  animation-delay: 0.3s;
+  /* border: 1px solid green; */
+}
+#star-five {
+  height: 60px;
+  bottom: -20px;
+  left: 100px;
+  animation-delay: 0.1s;
+  /* border: 1px solid blue !important; */
 }
 
-#star-right {
+#star-six {
+  height: 60px;
+  top: -20px ;
+  left: 100px;
+  animation-delay: 0.2s;
+  /* border: 1px solid blue !important; */
+}
+#star-seven {
+  border: 1px  red;
   height: 80px;
-  top: -20px;
-  right: 50px;
-  animation-delay: 0.4s;
+  top: 20px;
+  left: 0;
+  animation-delay: 0.3s;
+
 }
 
 @keyframes star-glow {

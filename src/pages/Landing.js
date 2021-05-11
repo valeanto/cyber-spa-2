@@ -22,9 +22,13 @@ export default function Landing() {
       <Link to="/instructions" className="landing-link logo-container">
         <img src={retreatLogo} alt="" />
         <img src={enterLogo} alt="" />
-        <img src={starImage} alt="" id='star-right' className='star'/>
-        <img src={starImage} alt="" id='star-top' className='star'/>
-
+        {/* <img src={starImage} alt="" className="star" id='star-one'/> */}
+        <img src={starImage} alt="" className="star" id='star-two'/>
+        <img src={starImage} alt="" className="star" id='star-three'/>
+        <img src={starImage} alt="" className="star" id='star-four'/>
+        <img src={starImage} alt="" className="star" id='star-five' />
+        <img src={starImage} alt="" className="star" id='star-six'/>
+        <img src={starImage} alt="" className="star" id='star-seven'/>
       </Link>
     </div>
   );
