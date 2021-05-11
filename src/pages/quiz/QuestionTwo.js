@@ -23,8 +23,8 @@ export default function QuestionTwo() {
         loop={true}
         playing={true}
       />
-      <div className="content questionThree_container">
-        <img src={title} alt={title} className="question_title" />
+      <div className="content questionTwo_container">
+        <img src={title} alt={title} className=" q2_title" />
         <div className="q2_container ">
           <div className="q2_item">
             <img src={air} alt={air} className="first-image" />
