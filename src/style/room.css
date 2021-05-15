@@ -42,6 +42,8 @@
 .d-container {
   position: absolute;
   height: 100%;
+
+  padding: 0 1rem;
 }
 .d-container img {
   /* position: absolute; */
@@ -54,6 +56,69 @@
 .left {
   left: 0rem;
 }
-.doorIconColor{
-    
+.doorIconColor {
+}
+.r1_item {
+  /* border: 3px solid blue; */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+.heart {
+  height: 100px;
+  position: relative;
+}
+.heart_pressed {
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  border: 1px solid white;
+}
+
+.heart_not_pressed {
+  opacity: 0;
+  border: 1px solid red;
+  height: 100%;
+  position: absolute;
+}
+.heart:hover .heart_pressed {
+  opacity: 0;
+}
+.heart:hover .heart_not_pressed {
+  opacity: 1;
+}
+
+#purple_circle {
+  height: 50px;
+  position: absolute;
+  top: 50%;
+}
+
+.purple_circle_active {
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-left: 0;
+  }
+  to {
+    -webkit-left: 25rem;
+  }
+}
+
+.a_container {
+  border: 1px solid blue;
+  height: 100px;
+  z-index: 5;
+}
+.a_container img {
+  height: 100%;
+  border: 1px solid pink;
 }
