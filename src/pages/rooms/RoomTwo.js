@@ -17,7 +17,7 @@ export default function RoomTwo() {
         playing={true}
       /> */}
       {/* <div className="room top">top</div>
-      <div className="room bottom">boattom</div> */}
+      <div className="room bottom">bottom</div> */}
       <Link to="/room-two" className="room right nav-button">
         {/* <img src={doorIcon} alt="" className="doorIcon" /> */}
         {/* <img src={doorIconColor} alt="" className="doorIconColor" /> */}

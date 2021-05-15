@@ -1,11 +1,16 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import bg from "../../images/rooms/r1/bg.mp4";
+import doorIconColor from "../../images/rooms/nav/back.png";
+// import doorRight from "../../images/rooms/nav/next.png";
+import doorIcon from "../../images/rooms/nav/frame.png";
+import retreatLogo from "../../images/logo/retreat.png";
+
 export default function RoomOne() {
   return (
-    <div>
+    <div className="r_container">
       <ReactPlayer
-        className="react-player quiz-video"
+        className=""
         url={bg}
         width="100%"
         height="100%"
@@ -13,11 +18,20 @@ export default function RoomOne() {
         loop={true}
         playing={true}
       />
-      <div className="r1_content">
-        <div className="logo">logo</div>
-        <div className="title">title</div>
-        <div className="door">door one</div>
-        <div className="door">door two</div>
+      <div className="r_content">
+        <div className="logo">
+          <img src={retreatLogo} alt="" />
+        </div>
+        <div className="nav-container">
+          <div className="d-container left">
+            <img src={doorIcon} alt="" className="" />
+            <img src={doorIconColor} alt="" className="doorIconColor" />{" "}
+          </div>
+          <div className="d-container right">
+            <img src={doorIcon} alt="" className="" />
+            <img src={doorIconColor} alt="" className="doorIconColor" />
+          </div>
+        </div>
       </div>
     </div>
   );

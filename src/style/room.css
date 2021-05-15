@@ -1,3 +1,59 @@
-.r1_content{
-    border:3px solid red;
+.r_container {
+  position: relative;
+  width: 100%;
+}
+.r_container video {
+  z-index: -5;
+  width: 100%;
+}
+.r_content {
+  position: absolute;
+  border: 3px solid red;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+.logo {
+  border: 3px solid red;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  height: 100%;
+}
+.door-nav {
+  width: 100px;
+  height: 100px;
+}
+.nav-container {
+  border: 3px solid blue;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.d-container {
+  position: absolute;
+  height: 100%;
+}
+.d-container img {
+  /* position: absolute; */
+  height: 100%;
+  object-fit: contain;
+}
+.right {
+  right: 0rem;
+}
+.left {
+  left: 0rem;
+}
+.doorIconColor{
+    
 }
