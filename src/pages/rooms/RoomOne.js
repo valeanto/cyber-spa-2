@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
+
 import bg from "../../images/rooms/r1/bg.mp4";
 import doorIconColor from "../../images/rooms/nav/back.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
@@ -41,9 +43,11 @@ export default function RoomOne() {
         playing={true}
       />
       <div className="r_content">
-        <div className="logo">
-          <img src={retreatLogo} alt="" />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img src={retreatLogo} alt="" />
+          </div>
+        </Link>
         <div className="nav-container">
           <div className="d-container left">
             <img src={doorIcon} alt="" className="" />
