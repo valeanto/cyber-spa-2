@@ -74,11 +74,10 @@ body {
   animation: star-glow 1.2s infinite alternate ease-in-out;
 }
 
-
 #star-two {
   height: 80px;
   top: -20px;
-  left:0px;
+  left: 0px;
   animation-delay: 1s;
   /* border: 1px solid blue; */
 }
@@ -191,10 +190,25 @@ body {
   }
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-h1{
+h1 {
   z-index: 100;
+}
+.about_button {
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about_box {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+}
+.active {
+  /* display: block; */
 }
