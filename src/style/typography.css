@@ -1,14 +1,17 @@
 @font-face {
-    font-family: "AL";
-    src: url("../fonts/Abhaya_Libre/AbhayaLibre-Bold.ttf");
-  }
-  @font-face {
-    font-family: "Lucas";
-    src: url("../fonts/Lucas_Descroix-Future_Fonts-Nostra_family-v_1_0-TRIAL/Nostrav1.0-SettTrial.eot");
-  }
-  
-  h1 {
-    font-family: AL;
-    /* color:white; */
-  
-  }
+  font-family: "AL";
+  src: url("../fonts/Abhaya_Libre/AbhayaLibre-Bold.ttf");
+}
+@font-face {
+  font-family: "Lucas";
+  src: url("../fonts/Lucas_Descroix-Future_Fonts-Nostra_family-v_1_0-TRIAL/Nostrav1.0-SettTrial.eot");
+}
+
+h1 {
+  font-family: AL;
+  /* color:white; */
+}
+.lucas {
+  font-family: Lucas;
+  font-style: oblique;
+}

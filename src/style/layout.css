@@ -111,7 +111,7 @@ body {
   /* border: 1px solid blue !important; */
 }
 #star-seven {
-  border: 1px red;
+  /* border: 1px red; */
   height: 80px;
   top: 20px;
   left: 0;
@@ -198,17 +198,63 @@ h1 {
   z-index: 100;
 }
 .about_button {
-  border: 1px solid red;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.about_box {
-  display: block;
+  /* border: 1px solid red; */
   position: absolute;
   top: 1rem;
-  left: 0;
+  left: 1rem;
 }
+
 .active {
   /* display: block; */
+}
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(177, 151, 235);
+  background: radial-gradient(
+    circle,
+    rgba(177, 151, 235, 1) 0%,
+    rgba(160, 157, 165, 1) 67%
+  );
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  width: 300px;
+  height: 350px;
+  padding: 1.5rem;
+}
+.about_title {
+  /* border: 1px solid red; */
+  width: 80%;
+  transform: translateY(15px);
+}
+.about_container p {
+  font-family: AL;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+.about_button{
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-family: AL;
+}
+.cross {
+  position: absolute;
+  left: 0.7rem;
+  background: none;
+  top: 1rem;
+  height:30px;
+  border: none;
+  outline: none;
+  color: rgba(177, 151, 235, 1);
+}
+.cross img{
+  height:100%;
 }
