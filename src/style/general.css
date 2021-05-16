@@ -1,5 +1,6 @@
 body {
-  cursor: url('../images/general/cursor.png'), auto;
+  /* cursor: url("../images/general/cursor.png") 20 20, auto; */
+  cursor: url("../images/general/c72.png") 36 36, auto;
 }
 .cursor {
   height: 100px;
