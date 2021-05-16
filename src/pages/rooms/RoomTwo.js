@@ -10,6 +10,16 @@ import circle from "../../images/rooms/r1/circle.png";
 // import doorRight from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
+import p1 from "../../images/rooms/r2/petals/p1.png";
+import p2 from "../../images/rooms/r2/petals/p2.png";
+import p3 from "../../images/rooms/r2/petals/p3.png";
+import p4 from "../../images/rooms/r2/petals/p4.png";
+import p5 from "../../images/rooms/r2/petals/p5.png";
+import p6 from "../../images/rooms/r2/petals/p6.png";
+import p7 from "../../images/rooms/r2/petals/p7.png";
+import p8 from "../../images/rooms/r2/petals/p8.png";
+import p9 from "../../images/rooms/r2/petals/p9.png";
+import p10 from "../../images/rooms/r2/petals/p10.png";
 
 export default function RoomTwo() {
   return (
@@ -39,13 +49,18 @@ export default function RoomTwo() {
             <img src={doorIconColor} alt="" className="doorIconColor" />
           </div>
         </div>
-        <div className="r1_item">
-          <div className="heart_box">
-            <img src="" alt="" id="r1_loading" />
-            <img src="" alt="" id="r1_box" />
-          </div>
+        <div className="petals_container">
+          <img src={p1} alt="" className="petal" />
+          <img src={p2} alt="" className="petal" />
+          <img src={p3} alt="" className="petal" />
+          <img src={p4} alt="" className="petal" />
+          <img src={p5} alt="" className="petal" />
+          <img src={p6} alt="" className="petal" />
+          <img src={p7} alt="" className="petal" />
+          <img src={p8} alt="" className="petal" />
+          <img src={p9} alt="" className="petal" />
+          <img src={p10} alt="" className="petal" />
         </div>
-        <div className="room_title"><img src='' alt="" /></div>
       </div>
     </div>
   );
