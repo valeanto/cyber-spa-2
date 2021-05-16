@@ -1,9 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import instructionsVideo from "../images/bg/background.mp4";
+import instructionsVideo from "../images/bg/ins_bg.mp4";
 import retreatLogo from "../images/logo/retreat.png";
-
 
 export default function Instructions() {
   return (
@@ -20,8 +19,9 @@ export default function Instructions() {
       <div className="logo">
         <img src={retreatLogo} alt="" />
       </div>
-      <Link to="/question-one" className="to-button-quiz float">
-        Lets begin
+      <Link to="/one" className="to-button-quiz float">
+        <img src='' alt="" />
+        lets begin
       </Link>
     </div>
   );

@@ -23,13 +23,13 @@ function App() {
           <Route path="/instructions" exact component={Instructions} />
           {/* <Route path="/quiz" exact component={Quiz} /> */}
           {/* ROOMS */}
-          <Route path="/room-one" exact component={RoomOne} />
-          <Route path="/room-two" exact component={RoomTwo} />
-          <Route path="/room-three" exact component={RoomThree} />
-          <Route path="/question-one" exact component={QuestionOne} />
-          <Route path="/question-two" exact component={QuestionTwo} />
-          <Route path="/question-three" exact component={QuestionThree} />
-          <Route path="/question-four" exact component={QuestionFour} />
+          <Route path="/the-lover" exact component={RoomOne} />
+          <Route path="/the-exhale" exact component={RoomTwo} />
+          <Route path="/the-getaway" exact component={RoomThree} />
+          <Route path="/one" exact component={QuestionOne} />
+          <Route path="/two" exact component={QuestionTwo} />
+          <Route path="/three" exact component={QuestionThree} />
+          <Route path="/four" exact component={QuestionFour} />
         </div>
       </Switch>
     </Router>

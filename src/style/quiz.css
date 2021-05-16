@@ -193,6 +193,7 @@ input {
   background: transparent;
   border: none;
   border-bottom: 2px solid white;
+  color: white;
 }
 
 .q1_text::placeholder {
@@ -204,6 +205,16 @@ input.middle:focus {
 }
 input:focus {
   outline: none;
+}
+textarea:focus,
+input:focus {
+  color: white;
+}
+
+input,
+select,
+textarea {
+  color: white;
 }
 
 input,
@@ -228,4 +239,12 @@ textarea {
   height: 100px;
   object-fit: contain;
   position: absolute;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
 }

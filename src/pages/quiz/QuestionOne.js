@@ -17,7 +17,7 @@ function QuestionOne() {
       <Redirect
         push
         to={{
-          pathname: "/question-two",
+          pathname: "/two",
         }}
       />
     );

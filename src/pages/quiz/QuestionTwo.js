@@ -31,7 +31,7 @@ export default function QuestionTwo() {
           </div>
 
           <div className="q2_item ">
-            <Link to="/question-three">
+            <Link to="/three">
               <img src={earth} alt={earth} className="first-image" />
             </Link>
           </div>
