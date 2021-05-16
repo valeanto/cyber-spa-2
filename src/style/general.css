@@ -1,3 +1,9 @@
+body {
+  cursor: url('../images/general/cursor.png'), auto;
+}
+.cursor {
+  height: 100px;
+}
 .petals_container {
   border: 1px solid blue;
   width: 100%;
@@ -8,13 +14,36 @@
 .petals_container img {
   border: 1px solid blue;
   object-fit: contain;
-  height: 350px;
+  height: 70%;
   position: absolute;
 }
 
 .petals_container img:nth-child(1) {
   left: 0;
+  animation: petals-left 5s infinite alternate;
 }
 .petals_container img:nth-child(1) {
   left: 10rem;
+}
+
+.box {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 301px;
+  height: 101px;
+  background-color: #54cfb3;
+  padding-top: 70px;
+}
+
+.opac {
+  opacity: 0.8;
+}
+
+.move-cursor {
+  cursor: move;
+}
+
+.grab-cursor {
+  cursor: grab;
+  cursor: -webkit-grab;
 }

@@ -12,6 +12,10 @@ import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
 
 export default function RoomThree() {
+  function dragStart() {}
+  function dragging() {}
+  function dragEnd() {}
+
   return (
     <div className="r_container">
       <ReactPlayer
@@ -39,13 +43,14 @@ export default function RoomThree() {
             <img src={doorIconColor} alt="" className="doorIconColor" />
           </div>
         </div>
-        <div className="r1_item">
-          <div className="heart_box">
-            <img src="" alt="" id="r1_loading" />
-            <img src="" alt="" id="r1_box" />
-          </div>
+        <div className="r3_container">
+          <div
+            className="box"
+            onMouseDown={dragStart}
+            onMouseMove={dragging}
+            onMouseUp={dragEnd}
+          ></div>
         </div>
-        <div className="room_title"><img src='' alt="" /></div>
       </div>
     </div>
   );
