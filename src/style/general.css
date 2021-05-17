@@ -27,15 +27,6 @@ body {
   left: 10rem;
 }
 
-.box {
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 301px;
-  height: 101px;
-  background-color: #54cfb3;
-  padding-top: 70px;
-}
-
 .opac {
   opacity: 0.8;
 }
@@ -56,15 +47,6 @@ body {
   padding: 0.5em;
   background-color: white;
   z-index: 3;
-}
-
-.box {
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 301px;
-  height: 101px;
-  background-color: #54cfb3;
-  padding-top: 70px;
 }
 
 .text {

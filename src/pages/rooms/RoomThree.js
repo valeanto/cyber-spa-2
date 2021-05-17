@@ -1,19 +1,36 @@
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-
-import bg from "../../images/rooms/r3/bg.mp4";
-import doorIconColorPrev from "../../images/rooms/nav/back.png";
-import doorIconColorNext from "../../images/rooms/nav/next.png";
-import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
-import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
-import circle from "../../images/rooms/r1/circle.png";
-// import doorRight from "../../images/rooms/nav/next.png";
-import doorIcon from "../../images/rooms/nav/frame.png";
-import retreatLogo from "../../images/logo/retreat.png";
 import $ from "jquery";
 import "jquery-ui-bundle";
 import "jquery-ui-bundle/jquery-ui.css";
+import bg from "../../images/rooms/r3/bg.mp4";
+import doorIconColorPrev from "../../images/rooms/nav/back.png";
+import doorIconColorNext from "../../images/rooms/nav/next.png";
+import doorIcon from "../../images/rooms/nav/frame.png";
+import retreatLogo from "../../images/logo/retreat.png";
+
+// ITEMS
+
+import bed from "../../images/rooms/r3/items/bed.png";
+import camera from "../../images/rooms/r3/items/camera.png";
+import chilli from "../../images/rooms/r3/items/chilli.png";
+import dior from "../../images/rooms/r3/items/dior.png";
+import dolphinShirt from "../../images/rooms/r3/items/dolphin-shirt.png";
+import dolphin from "../../images/rooms/r3/items/dolphin.png";
+import flowerPink from "../../images/rooms/r3/items/flower-pink.png";
+import flowerPurple from "../../images/rooms/r3/items/flower-purple.png";
+import heart from "../../images/rooms/r3/items/heart.png";
+import horse from "../../images/rooms/r3/items/horse.png";
+import india from "../../images/rooms/r3/items/india.png";
+import maddieSelfie from "../../images/rooms/r3/items/maddie-selfie.png";
+import maddie from "../../images/rooms/r3/items/maddie.png";
+import mensCup from "../../images/rooms/r3/items/mens-cup.png";
+import moon from "../../images/rooms/r3/items/moon.png";
+import moped from "../../images/rooms/r3/items/moped.png";
+import sage from "../../images/rooms/r3/items/sage.png";
+import solenneFloor from "../../images/rooms/r3/items/solenne-floor.png";
+import solenneSelfie from "../../images/rooms/r3/items/solenne-selfie.png";
 
 export default function RoomThree() {
   useEffect(() => {
@@ -33,8 +50,6 @@ export default function RoomThree() {
           .removeClass("move-cursor")
           .addClass("grab-cursor")
           .addClass("opac");
-
-        $(" .text ").hide();
       })
 
       .on("mouseup", function () {
@@ -78,10 +93,61 @@ export default function RoomThree() {
         </div>
         <div className="int_container">
           <div class="box">
-            <img src={circle} alt="" className="stock" />
+            <img src={bed} alt="" className="stock" />
           </div>
           <div class="box">
-            <img src={circle} alt="" className="stock" />
+            <img src={camera} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={chilli} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={dior} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={dolphinShirt} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={dolphin} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={flowerPink} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={flowerPurple} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={heart} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={horse} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={india} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={maddieSelfie} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={maddie} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={mensCup} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={moon} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={moped} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={sage} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={solenneFloor} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={solenneSelfie} alt="" className="stock" />
           </div>
         </div>
       </div>
