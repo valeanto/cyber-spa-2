@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
-import bg from "../../images/rooms/r1/bg.mp4";
+import bg from "../../images/rooms/r3/bg.mp4";
 import doorIconColor from "../../images/rooms/nav/back.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
 import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
@@ -77,7 +77,7 @@ export default function RoomThree() {
           </div>
         </div>
         <div class="box">
-          <img src={circle} alt="" className='stock'/>
+          <img src={circle} alt="" className="stock" />
         </div>
         {/* <div id="draggable" className="ui-widget-content">
           <p>Drag me around</p>
