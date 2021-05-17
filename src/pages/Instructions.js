@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import instructionsVideo from "../images/bg/ins_bg.mp4";
+import instructionsVideo from "../images/bg/ins_bg1.mp4";
 import retreatLogo from "../images/logo/retreat.png";
 import title from "../images/instructions/lets_begin.png";
 
 export default function Instructions() {
+  useEffect(() => {
+    const showImage = setTimeout(() => {
+      document.getElementById("letsBegin").style.opacity = "1";
+    }, 3000);
+    return () => clearTimeout(showImage);
+  }, []);
   return (
     <div className="instructions-landing">
       <ReactPlayer
@@ -21,7 +27,7 @@ export default function Instructions() {
         <img src={retreatLogo} alt="" />
       </div>
       <Link to="/one" className="to-button-quiz float title_center">
-        <img src={title} alt="" />
+        <img src={title} alt="" id="letsBegin" />
       </Link>
     </div>
   );
