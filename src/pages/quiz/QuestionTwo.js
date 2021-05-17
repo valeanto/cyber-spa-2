@@ -28,17 +28,7 @@ export default function QuestionTwo() {
         <div className="q2_container ">
           <div className="q2_item">
             <img src={air} alt={air} className="first-image" />
-          </div>
-
-          <div className="q2_item ">
-            <Link to="/three">
-              <img src={earth} alt={earth} className="first-image" />
-            </Link>
-          </div>
-
-          <div className="q2_item ">
-            <img src={water} alt={water} className="first-image" />
-            {/* <ReactPlayer
+              {/* <ReactPlayer
               className="video-image"
               url={waterVideo}
               width="100%"
@@ -47,6 +37,35 @@ export default function QuestionTwo() {
               loop={true}
               playing={true}
             /> */}
+          </div>
+
+          <div className="q2_item ">
+            <Link to="/three">
+              <img src={earth} alt={earth} className="first-image" />
+                {/* <ReactPlayer
+              className="video-image"
+              url={waterVideo}
+              width="100%"
+              height="100%"
+              controls={false}
+              loop={true}
+              playing={true}
+            /> */}
+            </Link>
+          </div>
+
+          <div className="q2_item ">
+            <img src={water} alt={water} className="first-image" />
+            <ReactPlayer
+              className="video-image"
+              url={waterVideo}
+              width="100%"
+              height="100%"
+              controls={false}
+              loop={true}
+              playing={true}
+              
+            />
           </div>
         </div>
       </div>
