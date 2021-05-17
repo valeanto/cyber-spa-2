@@ -29,7 +29,7 @@ body {
   height: 15px;
   width: 60px;
   display: flex;
-  padding-top:1rem;
+  padding-top: 1rem;
   padding-right: 2rem;
 }
 .sound img {
@@ -150,8 +150,8 @@ body {
 }
 
 .to-button-quiz {
-  font-size:20px;
-  font-family:Lucas !important;
+  font-size: 20px;
+  font-family: Lucas !important;
   /* border: 1px solid black; */
   position: absolute;
   top: 50%;
@@ -171,18 +171,13 @@ body {
   width: 50px;
   height: 50px;
   position: absolute;
+  z-index: 100;
 }
-.nav-button:hover .doorIcon {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+.d-container:hover .doorIcon {
+  opacity: 0;
 }
-.nav-button:hover .doorIconColor {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+.d-container:hover .doorIconColor {
+  opacity: 1;
 }
 
 .room img {
@@ -191,14 +186,16 @@ body {
   height: 100%;
 }
 .doorIcon {
-  display: block;
+  opacity: 1;
 }
 .doorIconColor {
+  transition: opacity 0.3s;
+  opacity: 0;
+  transform: scale(1.2);
   top: 0;
-  display: none;
+  margin-top: 0.5rem;
+  left: 0.3rem;
   position: absolute;
-  width: 50px;
-  height: 100px;
 }
 
 .float {
@@ -273,4 +270,3 @@ h1 {
 .cross img {
   height: 100%;
 }
-

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-
 import bg from "../../images/rooms/r1/bg.mp4";
-import doorIconColor from "../../images/rooms/nav/back.png";
+import doorIconColorPrev from "../../images/rooms/nav/back.png";
+import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
 import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
 import circle from "../../images/rooms/r1/circle.png";
-// import doorRight from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
 import firstA from "../../images/rooms/r1/heart_pressed.png";
@@ -50,12 +49,16 @@ export default function RoomOne() {
         </Link>
         <div className="nav-container">
           <div className="d-container left">
-            <img src={doorIcon} alt="" className="" />
-            <img src={doorIconColor} alt="" className="doorIconColor" />{" "}
+            <Link to="/the-getaway">
+              <img src={doorIcon} alt="" className="doorIcon" />
+              <img src={doorIconColorPrev} alt="" className="doorIconColor" />
+            </Link>
           </div>
           <div className="d-container right">
-            <img src={doorIcon} alt="" className="" />
-            <img src={doorIconColor} alt="" className="doorIconColor" />
+            <Link to="/the-exhale">
+              <img src={doorIcon} alt="" className="doorIcon" />
+              <img src={doorIconColorNext} alt="" className="doorIconColor" />
+            </Link>
           </div>
         </div>
         <div className="r1_item">

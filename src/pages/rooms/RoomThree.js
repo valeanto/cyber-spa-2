@@ -3,7 +3,8 @@ import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 import bg from "../../images/rooms/r3/bg.mp4";
-import doorIconColor from "../../images/rooms/nav/back.png";
+import doorIconColorPrev from "../../images/rooms/nav/back.png";
+import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
 import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
 import circle from "../../images/rooms/r1/circle.png";
@@ -15,11 +16,6 @@ import "jquery-ui-bundle";
 import "jquery-ui-bundle/jquery-ui.css";
 
 export default function RoomThree() {
-  // useEffect(() => {
-  //   $(function () {
-  //     $("#draggable").draggable();
-  //   });
-  // }, []);
   useEffect(() => {
     let grid_size = 10;
 
@@ -68,20 +64,24 @@ export default function RoomThree() {
         </Link>
         <div className="nav-container">
           <div className="d-container left">
-            <img src={doorIcon} alt="" className="" />
-            <img src={doorIconColor} alt="" className="doorIconColor" />{" "}
+            <Link to="/the-exhale">
+              <img src={doorIcon} alt="" className="doorIcon" />
+              <img src={doorIconColorPrev} alt="" className="doorIconColor" />
+            </Link>
           </div>
           <div className="d-container right">
-            <img src={doorIcon} alt="" className="" />
-            <img src={doorIconColor} alt="" className="doorIconColor" />
+            <Link to="/the-lover">
+              <img src={doorIcon} alt="" className="doorIcon" />
+              <img src={doorIconColorNext} alt="" className="doorIconColor" />
+            </Link>
           </div>
         </div>
         <div class="box">
           <img src={circle} alt="" className="stock" />
         </div>
-        {/* <div id="draggable" className="ui-widget-content">
-          <p>Drag me around</p>
-        </div> */}
+        <div class="box">
+          <img src={circle} alt="" className="stock" />
+        </div>
       </div>
     </div>
   );

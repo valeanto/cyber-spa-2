@@ -32,13 +32,13 @@
   height: 100px;
 }
 .nav-container {
+  z-index: 100;
   border: 3px solid blue;
   width: 100%;
   height: 80px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -1;
 }
 .d-container {
   position: absolute;
@@ -57,8 +57,7 @@
 .left {
   left: 0rem;
 }
-.doorIconColor {
-}
+
 .r1_item {
   /* border: 3px solid blue; */
   text-align: center;

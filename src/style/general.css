@@ -55,7 +55,7 @@ body {
   height: 150px;
   padding: 0.5em;
   background-color: white;
-  z-index: 100;
+  z-index: 3;
 }
 
 .box {
@@ -90,7 +90,7 @@ body {
 
 .stock {
   height: 100%;
-  z-index: 101;
+  /* z-index: 101; */
 }
 
 .temp {
