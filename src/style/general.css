@@ -57,3 +57,38 @@ body {
   background-color: white;
   z-index: 100;
 }
+
+.box {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 301px;
+  height: 101px;
+  background-color: #54cfb3;
+  padding-top: 70px;
+}
+
+.text {
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.opac {
+  opacity: 0.8;
+}
+
+.move-cursor {
+  cursor: move;
+}
+
+.grab-cursor {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+
+.stock{
+  height:100%;
+  z-index: 101;
+}

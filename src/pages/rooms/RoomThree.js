@@ -11,14 +11,42 @@ import circle from "../../images/rooms/r1/circle.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
 import $ from "jquery";
-import 'jquery-ui-bundle';
-import 'jquery-ui-bundle/jquery-ui.css';
+import "jquery-ui-bundle";
+import "jquery-ui-bundle/jquery-ui.css";
 
 export default function RoomThree() {
+  // useEffect(() => {
+  //   $(function () {
+  //     $("#draggable").draggable();
+  //   });
+  // }, []);
   useEffect(() => {
-    $(function () {
-      $("#draggable").draggable();
-    });
+    let grid_size = 10;
+
+    $(" .box ")
+      .draggable({ grid: [grid_size, grid_size] })
+
+      .resizable({ grid: grid_size * 2 })
+
+      .on("mouseover", function () {
+        $(this).addClass("move-cursor");
+      })
+
+      .on("mousedown", function () {
+        $(this)
+          .removeClass("move-cursor")
+          .addClass("grab-cursor")
+          .addClass("opac");
+
+        $(" .text ").hide();
+      })
+
+      .on("mouseup", function () {
+        $(this)
+          .removeClass("grab-cursor")
+          .removeClass("opac")
+          .addClass("move-cursor");
+      });
   }, []);
 
   return (
@@ -48,9 +76,12 @@ export default function RoomThree() {
             <img src={doorIconColor} alt="" className="doorIconColor" />
           </div>
         </div>
-        <div id="draggable" className="ui-widget-content">
-          <p>Drag me around</p>
+        <div class="box">
+          <img src={circle} alt="" className='stock'/>
         </div>
+        {/* <div id="draggable" className="ui-widget-content">
+          <p>Drag me around</p>
+        </div> */}
       </div>
     </div>
   );
