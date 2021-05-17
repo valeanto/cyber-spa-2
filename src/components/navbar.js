@@ -15,9 +15,13 @@ export default function Navbar() {
       {toggle && (
         <div className="about_container">
           <img src={aboutTitle} alt="" className="about_title" />
+
           <p>
-          A DIGITAL SPA EXPERIENCE TO EXPLORE, RELAX AND ESCAPE. TRANSLATING THE IDEA OF A PHYSICAL SPA INTO THE DIGITAL. 
+            A DIGITAL SPA EXPERIENCE TO EXPLORE, RELAX AND ESCAPE. TRANSLATING
+            THE IDEA OF A PHYSICAL SPA INTO THE DIGITAL.
           </p>
+          <div className="break"></div>
+
           <p>
             ART DIRECTION AND GRAPHICS:
             <a href="https://www.instagram.com/martajohansson/" target="_blank">
@@ -39,8 +43,34 @@ export default function Navbar() {
               <span className="lucas">V</span>ALENTINA ANTOLLINI{" "}
             </a>
           </p>
+          <div className="break"></div>
+          <p>THE GETAWAY ROOM: </p>
+          <p>
+            PHOTOGRAPHY + CREATIVE DIRECTION:{" "}
+            <a href="https://www.instagram.com/martajohansson/" target="_blank">
+              MARTA JOHANSSON
+            </a>
+          </p>
+          <p>
+            STYLING AND CASTING:{" "}
+            <a href="https://www.instagram.com/fruit__looop/" target="_blank">
+              ALEX SOROKA{" "}
+            </a>
+          </p>
+          <p>
+            MODELS:{" "}
+            <a href="https://www.instagram.com/maddiejac/" target="_blank">
+              MADDIE,{" "}
+            </a>
+            <a href="https://www.instagram.com/india_m/ " target="_blank">
+              INDIA,{" "}
+            </a>
+            <a href="https://www.instagram.com/solennechoi/ " target="_blank">
+              SOLENNE
+            </a>
+          </p>
+          <div className="break"></div>
 
-          <p>THE GETAWAY ROOM: STYLING AND CASTING: ALEX SOROKA MODELS: TBC </p>
           <p> THANKS TO EVERYONE INVOLVED</p>
           <button onClick={() => setToggle(!toggle)} className="cross">
             <img src={cross} alt="" />
