@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
-import bg from "../../images/rooms/r1/bg.mp4";
+import bg from "../../images/rooms/r2/bg.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";

@@ -6,14 +6,18 @@ body {
   height: 100px;
 }
 .petals_container {
-  border: 1px solid blue;
+  border: 3px solid pink;
   width: 100%;
   z-index: 4;
   height: 100%;
 }
+.petals_container img :hover {
+  animation-play-state: stop;
+  border:1px solid blue;
+}
 
 .petals_container img {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   object-fit: contain;
   height: 70%;
   position: absolute;
@@ -21,7 +25,71 @@ body {
 
 .petals_container img:nth-child(1) {
   left: 0;
-  animation: petals-left 5s infinite alternate;
+  bottom: 0;
+  animation: petals-left 30s infinite alternate;
+}
+.petals_container img:nth-child(2) {
+  right: 0;
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(3) {
+  left: 0;
+  bottom: 0;
+
+  animation: petals-left 30s infinite alternate;
+}
+.petals_container img:nth-child(4) {
+  right: 0;
+  bottom: 0;
+
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(5) {
+  left: 0;
+  animation: petals-left 30s infinite alternate;
+}
+.petals_container img:nth-child(6) {
+  right: 0;
+  bottom: 0;
+
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(7) {
+  top: 0;
+  bottom: 0;
+
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(8) {
+  right: 0;
+  bottom: 0;
+
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(9) {
+  right: 0;
+  animation: petals-right 30s infinite alternate;
+}
+.petals_container img:nth-child(10) {
+  right: 0;
+  animation: petals-right 30s infinite alternate;
+}
+
+@keyframes petals-left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 80%;
+  }
+}
+@keyframes petals-right {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 80%;
+  }
 }
 .petals_container img:nth-child(1) {
   left: 10rem;

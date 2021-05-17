@@ -6,7 +6,6 @@ body {
 
 .background-landing {
   width: 100%;
-  /* border: 2px solid pink; */
   position: relative;
 }
 
@@ -16,7 +15,6 @@ body {
 }
 
 .navbar {
-  /* border: 1px solid blue; */
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -25,7 +23,6 @@ body {
   padding: 1rem;
 }
 .sound {
-  /* border: 1px solid blue; */
   height: 15px;
   width: 60px;
   display: flex;
