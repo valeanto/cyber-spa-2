@@ -48,3 +48,12 @@ body {
   cursor: grab;
   cursor: -webkit-grab;
 }
+
+#draggable {
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  padding: 0.5em;
+  background-color: white;
+  z-index: 100;
+}

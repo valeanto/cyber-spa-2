@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
@@ -10,11 +10,16 @@ import circle from "../../images/rooms/r1/circle.png";
 // import doorRight from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
+import $ from "jquery";
+import 'jquery-ui-bundle';
+import 'jquery-ui-bundle/jquery-ui.css';
 
 export default function RoomThree() {
-  function dragStart() {}
-  function dragging() {}
-  function dragEnd() {}
+  useEffect(() => {
+    $(function () {
+      $("#draggable").draggable();
+    });
+  }, []);
 
   return (
     <div className="r_container">
@@ -43,13 +48,8 @@ export default function RoomThree() {
             <img src={doorIconColor} alt="" className="doorIconColor" />
           </div>
         </div>
-        <div className="r3_container">
-          <div
-            className="box"
-            onMouseDown={dragStart}
-            onMouseMove={dragging}
-            onMouseUp={dragEnd}
-          ></div>
+        <div id="draggable" className="ui-widget-content">
+          <p>Drag me around</p>
         </div>
       </div>
     </div>
