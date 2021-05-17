@@ -17,6 +17,7 @@
   left: 0;
   top: 0;
   transform: none;
+  /* position: absolute; */
 }
 .questionContainer h1 {
   color: white;
@@ -29,7 +30,7 @@
   height: 100%;
 }
 .q2_title {
-  z-index: 10;
+  /* z-index: 1; */
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -43,7 +44,7 @@
   left: 0;
 }
 .q2_container {
-  z-index: 2;
+  z-index: 1;
   border: 2px solid pink;
   position: absolute;
   display: flex;
@@ -62,7 +63,6 @@
   height: 100%;
   width: 20%;
   transform: translateY(-30rem);
-
 }
 .q2_item:nth-child(2) {
   animation-delay: 0.4s;
@@ -96,16 +96,27 @@
 }
 /* QUESTION THREE */
 .q3_title {
-  z-index: 10;
+  /* z-index: 1; */
+  /* position: absolute; */
+  top: 3rem;
   object-fit: contain;
-  width: 100%;
-  height: 100%;
-  transform: translateY(-60px) scale(0.8);
+  /* border: 1px solid red; */
+  width: 60%;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 1920px) {
+  .q3_title {
+    margin-top: 15rem;
+    border: 1px solid blue;
+    margin-bottom:10rem;
+  }
 }
 .q3_content {
+  z-index: 10;
   width: 100%;
   position: relative;
-  bottom: 16rem;
+  top: 0;
   border-bottom: 1px solid white;
 }
 .row {
@@ -115,9 +126,7 @@
   height: 80px;
   justify-content: space-around;
 }
-.row:hover {
-  /* filter: invert(1); */
-}
+
 .row h1 {
   /* margin:0 4rem; */
 }
@@ -150,8 +159,7 @@
   transform: rotateY(90deg);
 }
 .questionThree_container {
-  display: flex;
-  flex-direction: column;
+  border: 1px solid orange;
   height: 100%;
   position: absolute;
   top: 0;
@@ -241,4 +249,77 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   color: white !important;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+/* QUESTION TWO */
+
+.orb {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0 150px;
+  float: left;
+  transition: all 0.2s ease-out;
+}
+
+.orb:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.marquee {
+  /* height: 200px; */
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  /* left:-200px; */
+  justify-content: space-around;
+  /* padding-left:-600px ; */
+}
+
+.marquee--inner {
+  transform: translateY(18px);
+  display: block;
+  width: 200%;
+  position: absolute;
+  /* border: 2px solid red; */
+
+  animation: marquee 20s linear infinite;
+}
+.second-row .marquee--inner {
+  animation: marquee-right 20s linear infinite;
+}
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+
+.marquee--inner span {
+  float: left;
+  width: 50%;
+}
+.second-row .marquee--inner span {
+  float: right;
+  width: 50%;
+}
+.third .marquee--inner {
+  animation-delay: 3s;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes marquee-right {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100%;
+  }
 }

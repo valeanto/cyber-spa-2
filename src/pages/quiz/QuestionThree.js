@@ -22,22 +22,82 @@ export default function QuestionThree() {
         <img src={title} className="q3_title" alt="" />
         <div className="q3_content">
           <div className="row">
-            <h1>inhale</h1>
-            <h1>slow</h1>
-            <h1>exhale</h1>
+            <div class="marquee">
+              <div class="marquee--inner">
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">inhale</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">exhale</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb yellow">slow</h1>
+                  </Link>
+                </span>
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">inhale</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">exhale</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb yellow">slow</h1>
+                  </Link>
+                </span>
+              </div>
+            </div>
           </div>
           <div className="row">
-            <Link to="question-four">
-              <h1> heart</h1>
-            </Link>
-            <Link to="question-four">
-              <h1>Me</h1>
-            </Link>
+            <div class="marquee second-row">
+              <div class="marquee--inner">
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">heart</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">Me</h1>
+                  </Link>
+                </span>
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">heart</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">Me</h1>
+                  </Link>
+                </span>
+              </div>
+            </div>
           </div>
           <div className="row">
-            <h1>playa</h1>
-            <h1>escape</h1>
-            <h1>fun</h1>
+          <div class="marquee">
+              <div class="marquee--inner third">
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">playa</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">escape</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb yellow">fun</h1>
+                  </Link>
+                </span>
+                <span>
+                  <Link to="/four">
+                    <h1 class="orb">playa</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb red">escape</h1>
+                  </Link>
+                  <Link to="/four">
+                    <h1 class="orb yellow">fun</h1>
+                  </Link>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
