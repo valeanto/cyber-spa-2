@@ -20,10 +20,6 @@
   left: 0 !important;
   width: 10px;
   height: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
 }
 
 .box {
@@ -46,6 +42,9 @@
 }
 .box:hover .ui-icon-gripsmall-diagonal-se {
   background-color: red;
+}
+.ui-resizable {
+  position: absolute !important;
 }
 .logo {
   margin-top: 1rem;
