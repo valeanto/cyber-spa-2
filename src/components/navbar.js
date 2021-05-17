@@ -9,15 +9,14 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <button className="about_button" onClick={() => setToggle(!toggle)}>
+      <button className="about_button" onMouseOver={() => setToggle(!toggle)}>
         about
       </button>
       {toggle && (
         <div className="about_container">
           <img src={aboutTitle} alt="" className="about_title" />
           <p>
-            ‘A DIGITAL INTERPRETATION OF A SPA, AND WHAT THE FUTURE OF
-            RELAXATION COULD INVOLVE
+          A DIGITAL SPA EXPERIENCE TO EXPLORE, RELAX AND ESCAPE. TRANSLATING THE IDEA OF A PHYSICAL SPA INTO THE DIGITAL. 
           </p>
           <p>
             ART DIRECTION AND GRAPHICS:
@@ -26,13 +25,13 @@ export default function Navbar() {
             </a>
           </p>
           <p>
-            <a href="https://www.instagram.com/martajohansson/" target="_blank">
+            <a href="https://www.instagram.com/lithexfree/ " target="_blank">
               MUSIC: LITHE & FREE
             </a>
           </p>
 
           <p>
-            WEBSITE CODING:
+            WEBSITE DEVELOPMENT:
             <a
               href="https://www.instagram.com/valentinantollini/"
               target="_blank"
