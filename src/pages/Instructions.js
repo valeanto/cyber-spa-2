@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import instructionsVideo from "../images/bg/ins_bg.mp4";
 import retreatLogo from "../images/logo/retreat.png";
+import title from "../images/instructions/lets_begin.png";
 
 export default function Instructions() {
   return (
@@ -19,9 +20,8 @@ export default function Instructions() {
       <div className="logo">
         <img src={retreatLogo} alt="" />
       </div>
-      <Link to="/one" className="to-button-quiz float">
-        <img src='' alt="" />
-        lets begin
+      <Link to="/one" className="to-button-quiz float title_center">
+        <img src={title} alt="" />
       </Link>
     </div>
   );

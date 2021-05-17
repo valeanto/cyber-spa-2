@@ -76,11 +76,13 @@ export default function RoomThree() {
             </Link>
           </div>
         </div>
-        <div class="box">
-          <img src={circle} alt="" className="stock" />
-        </div>
-        <div class="box">
-          <img src={circle} alt="" className="stock" />
+        <div className="int_container">
+          <div class="box">
+            <img src={circle} alt="" className="stock" />
+          </div>
+          <div class="box">
+            <img src={circle} alt="" className="stock" />
+          </div>
         </div>
       </div>
     </div>
