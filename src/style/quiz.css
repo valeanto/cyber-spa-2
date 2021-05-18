@@ -1,5 +1,4 @@
 .questionContainer {
-  /* border: 1px solid black; */
   position: relative;
   text-align: center;
   height: 100%;
@@ -9,7 +8,6 @@
   height: 100% !important;
 }
 .quiz-video {
-  /* border: 1px solid blue; */
   z-index: -100;
   object-fit: cover;
   width: 100%;
@@ -17,7 +15,6 @@
   left: 0;
   top: 0;
   transform: none;
-  /* position: absolute; */
 }
 .questionContainer h1 {
   color: white;
@@ -59,12 +56,16 @@
 }
 /* QUESTION TWO */
 .q2_item {
-  animation: float 1s infinite alternate ease-in-out;
+  /* animation: float 1s infinite alternate ease-in-out; */
+  top: 0;
+  position: relative;
   margin: 0 1rem;
-  height: 100%;
+  height: 25rem;
   width: 20%;
-  transform: translateY(-30rem);
+  border: 3px solid blue;
+  /* transform: translateY(-30rem); */
 }
+
 .q2_item:nth-child(2) {
   animation-delay: 0.4s;
 }
@@ -72,28 +73,43 @@
   animation-delay: 0.2s;
 }
 .q2_item .first-image {
-  transform: translateY(50px);
+  /* transform: translateY(50px); */
   object-fit: contain;
   position: absolute;
   width: 100%;
-  height: 100%;
   border: 1px solid pink;
+  opacity: 1;
   display: block;
+}
+.video_container {
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  width: 100% !important;
+  height: 100%;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  z-index: 4;
+  opacity: 1;
+  /* transition: opacity 0.3s; */
 }
 
-.q2_item .video-image {
-  /* border: 1px solid green; */
-  z-index: 5;
-  width: 100%;
+.q2_item .video-image video {
+  width: 600px !important;
+  height: 600px !important;
   position: absolute;
-  bottom: 0;
-  display: none;
+  top: -150px;
+  left: -150px;
+  border: 1px solid red;
 }
+
 .q2_item:hover .first-image {
-  /* display: none; */
+  opacity: 0;
 }
-.q2_item:hover .video-image {
-  display: block;
+.q2_item:hover .video_container {
+  opacity: 1;
 }
 /* QUESTION THREE */
 .q3_title {
@@ -115,12 +131,12 @@
   width: 100%;
   position: relative;
   top: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   top: 30%;
 }
 .row {
   z-index: 20;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   display: flex;
   height: 80px;
   justify-content: space-around;
@@ -291,11 +307,13 @@ input:-webkit-autofill:active {
   box-sizing: border-box;
   position: relative;
   display: flex;
-  /* left:-200px; */
   justify-content: space-around;
-  /* padding-left:-600px ; */
+  background: transparent;
 }
-
+.marquee:hover {
+  transition: background 0.4s;
+  background: #d1b8fd;
+}
 .marquee--inner {
   transform: translateY(18px);
   display: block;

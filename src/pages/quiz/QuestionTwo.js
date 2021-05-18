@@ -7,6 +7,7 @@ import earth from "../../images/quiz/q2/earth.png";
 import water from "../../images/quiz/q2/water.png";
 import title from "../../images/quiz/q2/title.png";
 import waterVideo from "../../images/quiz/q2/water.mov";
+import mountainVideo from "../../images/quiz/q2/mountain.mov";
 import retreatLogo from "../../images/quiz/q2/retreat.png";
 
 export default function QuestionTwo() {
@@ -30,15 +31,6 @@ export default function QuestionTwo() {
         <div className="q2_container">
           <div className="q2_item">
             <img src={air} alt={air} className="first-image" />
-            {/* <ReactPlayer
-              className="video-image"
-              url={waterVideo}
-              width="100%"
-              height="100%"
-              controls={false}
-              loop={true}
-              playing={true}
-            /> */}
           </div>
 
           <div className="q2_item ">
@@ -58,15 +50,17 @@ export default function QuestionTwo() {
 
           <div className="q2_item">
             <img src={water} alt={water} className="first-image" />
-            <ReactPlayer
-              className="video-image"
-              url={waterVideo}
-              width="100%"
-              height="100%"
-              controls={false}
-              loop={true}
-              playing={true}
-            />
+            <div className="video_container">
+              <ReactPlayer
+                className="video-image"
+                url={waterVideo}
+                width="100%"
+                height="100%"
+                controls={false}
+                loop={true}
+                playing={true}
+              />
+            </div>
           </div>
         </div>
       </div>

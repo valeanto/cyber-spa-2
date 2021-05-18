@@ -29,22 +29,14 @@ export default function QuestionThree() {
                 <span>
                   <Link to="/four">
                     <h1 class="orb">inhale</h1>
-                  </Link>
-                  <Link to="/four">
                     <h1 class="orb red">exhale</h1>
-                  </Link>
-                  <Link to="/four">
                     <h1 class="orb yellow">slow</h1>
                   </Link>
                 </span>
                 <span>
                   <Link to="/four">
                     <h1 class="orb">inhale</h1>
-                  </Link>
-                  <Link to="/four">
                     <h1 class="orb red">exhale</h1>
-                  </Link>
-                  <Link to="/four">
                     <h1 class="orb yellow">slow</h1>
                   </Link>
                 </span>
