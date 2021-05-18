@@ -24,8 +24,8 @@ export default function QuestionTwo() {
         playing={true}
       />
       <div className="content questionTwo_container">
-        <div className="q_title">
-          <img src={title} alt={title} className=" q2_title" />
+        <div className="q_title qTwo">
+          <img src={title} alt={title} className="q2_title" />
         </div>
         <div className="q2_container">
           <div className="q2_item">

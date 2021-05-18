@@ -20,7 +20,9 @@ export default function QuestionFour() {
         playing={true}
       />
       <div className="contentFour questionThree_container">
-        <img src={title} alt={title} className="question_title" />
+        <div className="q_title qFour">
+          <img src={title} alt={title} className="question_title" />
+        </div>
         <div className="door-container ">
           <div className="door doorOne">
             <img src={getaway} alt="" />

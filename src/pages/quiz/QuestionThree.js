@@ -19,7 +19,9 @@ export default function QuestionThree() {
         playing={true}
       />
       <div className="questionThree_container">
-        <img src={title} className="q3_title" alt="" />
+        <div className="q_title qThree">
+          <img src={title} className="q3_title" alt="" />
+        </div>
         <div className="q3_content">
           <div className="row">
             <div class="marquee">
@@ -72,7 +74,7 @@ export default function QuestionThree() {
             </div>
           </div>
           <div className="row">
-          <div class="marquee">
+            <div class="marquee">
               <div class="marquee--inner third">
                 <span>
                   <Link to="/four">

@@ -34,7 +34,7 @@ function QuestionOne() {
         playing={true}
       />
       <div className="content questionThree_container">
-        <div className="q_title">
+        <div className="q_title qOne">
         <img src={title} alt="" className="q1_title" />
         </div>
         <form onSubmit={handleSubmit}>
