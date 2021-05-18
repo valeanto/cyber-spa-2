@@ -24,11 +24,13 @@ export default function QuestionTwo() {
         playing={true}
       />
       <div className="content questionTwo_container">
-        <img src={title} alt={title} className=" q2_title" />
-        <div className="q2_container ">
+        <div className="q_title">
+          <img src={title} alt={title} className=" q2_title" />
+        </div>
+        <div className="q2_container">
           <div className="q2_item">
             <img src={air} alt={air} className="first-image" />
-              {/* <ReactPlayer
+            {/* <ReactPlayer
               className="video-image"
               url={waterVideo}
               width="100%"
@@ -42,7 +44,7 @@ export default function QuestionTwo() {
           <div className="q2_item ">
             <Link to="/three">
               <img src={earth} alt={earth} className="first-image" />
-                {/* <ReactPlayer
+              {/* <ReactPlayer
               className="video-image"
               url={waterVideo}
               width="100%"
@@ -54,7 +56,7 @@ export default function QuestionTwo() {
             </Link>
           </div>
 
-          <div className="q2_item ">
+          <div className="q2_item">
             <img src={water} alt={water} className="first-image" />
             <ReactPlayer
               className="video-image"
@@ -64,7 +66,6 @@ export default function QuestionTwo() {
               controls={false}
               loop={true}
               playing={true}
-              
             />
           </div>
         </div>
