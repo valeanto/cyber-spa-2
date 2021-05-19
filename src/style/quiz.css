@@ -188,6 +188,7 @@
   transform-origin: center;
 }
 .doorBack {
+  transform: scaleX(-1);
   opacity: 0;
   object-fit: contain;
   position: absolute;

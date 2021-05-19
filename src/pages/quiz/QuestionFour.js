@@ -8,6 +8,8 @@ import candle from "../../images/quiz/q4/candle.png";
 import getaway from "../../images/quiz/q4/getaway.png";
 import mirror from "../../images/quiz/q4/mirror.png";
 import loverDoor from "../../images/quiz/q4/lover-door.png";
+import getawayDoor from "../../images/quiz/q4/getaway-door.png";
+import exhaleDoor from "../../images/quiz/q4/exhale-door.png";
 
 export default function QuestionFour() {
   return (
@@ -32,12 +34,12 @@ export default function QuestionFour() {
           </div>
           <div className="door doorTwo">
             <img src={mirror} alt="" className="doorFront" />
-            <img src={loverDoor} alt="" className="doorBack" />
+            <img src={exhaleDoor} alt="" className="doorBack" />
           </div>
 
           <div className="door doorThree">
             <img src={candle} alt="" className="doorFront" />
-            <img src={loverDoor} alt="" className="doorBack" />
+            <img src={getawayDoor} alt="" className="doorBack" />
           </div>
         </div>
       </div>
