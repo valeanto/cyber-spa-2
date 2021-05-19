@@ -66,13 +66,12 @@
 .q2_item:nth-child(2) {
   margin: 0 4rem;
 }
-.q2_item:nth-child(2) {
-}
+
 .q2_item .first-image {
   object-fit: contain;
   position: absolute;
   width: 100%;
-  top: 32%;
+  top: 28%;
   opacity: 1;
   display: block;
 }
@@ -81,7 +80,7 @@
   object-fit: contain;
   position: absolute;
   width: 100%;
-  top: 32%;
+  top: 28%;
   display: block;
   transition: opacity 0.3s;
 }
@@ -96,11 +95,11 @@
 .q3_title {
   top: 3rem;
   object-fit: contain;
-  width: 60%;
+  width: 50%;
 }
 
 .q3_content {
-  z-index: 10;
+  /* z-index: 10; */
   width: 100%;
   position: relative;
   top: 0;
@@ -161,7 +160,7 @@
   transition: opacity 0.5s;
 }
 .doorTwo {
-  margin: 0 3rem;
+  margin: 0 8rem;
 }
 
 .doorFront {
@@ -176,7 +175,7 @@
   transform-origin: center;
 }
 .doorBack {
-  transform: scaleX(-1);
+  transform: scaleX(-1) translateZ(-1px);
   opacity: 0;
   object-fit: contain;
   position: absolute;
@@ -189,7 +188,7 @@
 }
 
 .q_title {
-  height: 7%;
+  height: 4.5%;
   /* top: 25%; */
   position: relative;
   left: 50%;
@@ -223,7 +222,7 @@
 .question_title {
   top: 3rem;
   object-fit: contain;
-  width: 60%;
+  width: 50%;
 }
 
 .q1_text {
@@ -309,7 +308,6 @@ input:-webkit-autofill:active {
   transition: all 0.2s ease-out;
   object-fit: contain;
   height: 40px;
-  /* border: 1px solid red; */
 }
 
 .orb:hover {
@@ -381,6 +379,5 @@ input:-webkit-autofill:active {
   position: absolute;
   top: 0;
   height: 100%;
-  /* border: 1px solid red; */
   width: 100%;
 }

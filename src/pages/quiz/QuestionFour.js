@@ -28,19 +28,24 @@ export default function QuestionFour() {
           <img src={title} alt={title} className="question_title" />
         </div>
         <div className="door-container ">
-          <div className="door doorOne">
-            <img src={getaway} alt="" className="doorFront" />
-            <img src={loverDoor} alt="" className="doorBack" />
-          </div>
-          <div className="door doorTwo">
-            <img src={mirror} alt="" className="doorFront" />
-            <img src={exhaleDoor} alt="" className="doorBack" />
-          </div>
-
-          <div className="door doorThree">
-            <img src={candle} alt="" className="doorFront" />
-            <img src={getawayDoor} alt="" className="doorBack" />
-          </div>
+          <Link to="/the-lover">
+            <div className="door doorOne">
+              <img src={getaway} alt="" className="doorFront" />
+              <img src={loverDoor} alt="" className="doorBack" />
+            </div>
+          </Link>
+          <Link to="/the-exhale">
+            <div className="door doorTwo">
+              <img src={mirror} alt="" className="doorFront" />
+              <img src={exhaleDoor} alt="" className="doorBack" />
+            </div>
+          </Link>
+          <Link to="/the-getaway">
+            <div className="door doorThree">
+              <img src={candle} alt="" className="doorFront" />
+              <img src={getawayDoor} alt="" className="doorBack" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
