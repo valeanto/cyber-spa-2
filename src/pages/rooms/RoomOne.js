@@ -18,8 +18,8 @@ export default function RoomOne() {
     let logo = document.querySelector(".logo-header");
     let logoSpan = document.querySelectorAll(".logo");
     const onLoadToQuiz = setTimeout(() => {
-      intro.style.opacity = "0";
-    }, 6000);
+      intro.style.top = "-100vh";
+    }, 2000);
 
     return () => clearTimeout(onLoadToQuiz);
   }, []);
@@ -28,17 +28,14 @@ export default function RoomOne() {
 
   function changeImage() {
     let i = 0;
-    //   consol
     if (i < affirmations.length - 1) {
       i++;
     } else {
       i = 0;
     }
-    console.log(i);
   }
   function playAnim() {
     document.getElementById("purple_circle").className = "purple_circle_active";
-    console.log("hello");
   }
 
   return (
@@ -98,10 +95,18 @@ export default function RoomOne() {
         ))} */}
       </div>
       <div class="intro">
-        <h3 class="logo-header">
+        <div class="logo-header">
           <span class="logo">Analysing test results</span>
-          <span class="logo">logo</span>
-        </h3>
+          <ReactPlayer
+            className=""
+            url={bg}
+            width="100%"
+            height="100%"
+            controls={false}
+            loop={true}
+            playing={true}
+          />
+        </div>
       </div>
     </div>
   );

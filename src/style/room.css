@@ -157,3 +157,7 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
+
+.intro {
+  transition: 1s;
+}

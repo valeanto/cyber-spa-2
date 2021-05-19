@@ -15,15 +15,7 @@ export default function QuestionTwo() {
     <div className="questionContainer">
       <img src={retreatLogo} alt={title} className="retreatLogo" />
 
-      <ReactPlayer
-        className="react-player quiz-video"
-        url={quizOneBackground}
-        width="100%"
-        height="100%"
-        controls={false}
-        loop={true}
-        playing={true}
-      />
+      {/* <img src={}alt="" className="first-image" /> */}
       <div className="content questionTwo_container">
         <div className="q_title qTwo">
           <img src={title} alt={title} className="q2_title" />
