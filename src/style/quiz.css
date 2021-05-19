@@ -396,3 +396,13 @@ input:-webkit-autofill:active {
     right: -100%;
   }
 }
+
+
+.intro{
+  opacity: 1;
+  position: absolute;
+  top:0;
+  height:100%;
+  border: 1px solid red;
+  width:100%;
+}

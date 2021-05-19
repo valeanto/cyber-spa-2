@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import bg from "../../images/rooms/r1/bg.mp4";
@@ -13,6 +13,17 @@ import firstA from "../../images/rooms/r1/heart_pressed.png";
 import secondA from "../../images/rooms/r1/heart_not_pressed.png";
 
 export default function RoomOne() {
+  useEffect(() => {
+    let intro = document.querySelector(".intro");
+    let logo = document.querySelector(".logo-header");
+    let logoSpan = document.querySelectorAll(".logo");
+    const onLoadToQuiz = setTimeout(() => {
+      intro.style.opacity = "0";
+    }, 6000);
+
+    return () => clearTimeout(onLoadToQuiz);
+  }, []);
+
   const affirmations = [firstA, secondA];
 
   function changeImage() {
@@ -85,6 +96,12 @@ export default function RoomOne() {
             <img src={`${item}`} alt="" />
           </div>
         ))} */}
+      </div>
+      <div class="intro">
+        <h3 class="logo-header">
+          <span class="logo">Analysing test results</span>
+          <span class="logo">logo</span>
+        </h3>
       </div>
     </div>
   );
