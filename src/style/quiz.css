@@ -143,39 +143,48 @@
   justify-content: center;
   perspective: 800px;
   position: absolute;
-  top: 0;
+  top: 25%;
   height: 100%;
   left: 0;
   /* border: 1px solid red; */
   width: 100%;
 }
 .door {
-  width: 25% !important;
+  /* width: 25% !important; */
+  width: 240px;
   position: relative;
-  height: 100%;
+  height: 410px;
   transform-style: preserve-3d;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: end;
   /* border: 2px solid purple; */
-  width: 30%;
-  margin-top: 1rem;
+  /* width: 30%; */
+  /* margin-top: 1rem; */
+}
+.door img {
+  height: 100%;
+  object-fit: contain;
 }
 .door:hover {
-  transform: rotateY(35deg);
+  transform: rotateY(180deg);
 }
 .door:active {
   transform: rotateY(180deg);
 }
 
-.door:active .doorFront {
+.door:hover .doorFront {
   opacity: 0;
 }
-.door:active .doorBack {
+.door:hover .doorBack {
   opacity: 1;
   transition: opacity 0.5s;
 }
+.doorTwo {
+  margin: 0 3rem;
+}
+
 .doorFront {
   opacity: 1;
   object-fit: contain;
