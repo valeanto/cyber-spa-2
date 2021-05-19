@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mov";
+import title from "../../images/quiz/q4/title.png";
+
 import candle from "../../images/quiz/q4/candle.png";
 import getaway from "../../images/quiz/q4/getaway.png";
 import mirror from "../../images/quiz/q4/mirror.png";
-import title from "../../images/quiz/q4/title.png";
+import loverDoor from "../../images/quiz/q4/lover-door.png";
 
 export default function QuestionFour() {
   return (
@@ -25,13 +27,17 @@ export default function QuestionFour() {
         </div>
         <div className="door-container ">
           <div className="door doorOne">
-            <img src={getaway} alt="" />
+            <img src={getaway} alt="" className="doorFront" />
+            <img src={loverDoor} alt="" className="doorBack" />
           </div>
           <div className="door doorTwo">
-            <img src={mirror} alt="" />
-          </div>k
+            <img src={mirror} alt="" className="doorFront" />
+            <img src={loverDoor} alt="" className="doorBack" />
+          </div>
+
           <div className="door doorThree">
-            <img src={candle} alt="" />
+            <img src={candle} alt="" className="doorFront" />
+            <img src={loverDoor} alt="" className="doorBack" />
           </div>
         </div>
       </div>
