@@ -29,11 +29,9 @@ export default function QuestionFour() {
           </div>
           <div className="door doorTwo">
             <img src={mirror} alt="" />
-          </div>
+          </div>k
           <div className="door doorThree">
-            <Link to="/three">
-              <img src={candle} alt="" />
-            </Link>
+            <img src={candle} alt="" />
           </div>
         </div>
       </div>
