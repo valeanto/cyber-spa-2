@@ -19,6 +19,7 @@ export default function QuestionTwo() {
       <div className="content questionTwo_container">
         <div className="q_title qTwo">
           <img src={title} alt={title} className="q2_title" />
+          <img src={title} alt={title} className="q2_title" />
         </div>
         <div className="q2_container">
           <div className="q2_item">
@@ -28,15 +29,6 @@ export default function QuestionTwo() {
           <div className="q2_item ">
             <Link to="/three">
               <img src={earth} alt={earth} className="first-image" />
-              {/* <ReactPlayer
-              className="video-image"
-              url={waterVideo}
-              width="100%"
-              height="100%"
-              controls={false}
-              loop={true}
-              playing={true}
-            /> */}
             </Link>
           </div>
 

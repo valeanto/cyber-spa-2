@@ -323,7 +323,6 @@ input:-webkit-autofill:active {
 /* QUESTION TWO */
 
 .orb {
-  /* border-radius: 50px; */
   display: inline-block;
   margin: 0 150px;
   float: left;
@@ -397,12 +396,11 @@ input:-webkit-autofill:active {
   }
 }
 
-
-.intro{
+.intro {
   opacity: 1;
   position: absolute;
-  top:0;
-  height:100%;
+  top: 0;
+  height: 100%;
   border: 1px solid red;
-  width:100%;
+  width: 100%;
 }

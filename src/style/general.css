@@ -19,7 +19,7 @@ body {
 .petals_container img {
   /* border: 1px solid blue; */
   object-fit: contain;
-  height: 70%;
+  /* height: 70%; */
   position: absolute;
 }
 
