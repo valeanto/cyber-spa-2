@@ -240,7 +240,7 @@ input {
   z-index: 10;
   color: white;
   font-family: "AL";
-  font-size: 15px;
+  font-size: 16px;
   width: 300px;
 }
 .q1_text[type="text"] {
@@ -388,3 +388,4 @@ input:-webkit-autofill:active {
   transition: 1s;
   z-index: 200;
 }
+

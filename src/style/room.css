@@ -110,8 +110,9 @@
 .left {
   left: 0rem;
 }
-
 .r1_item {
+  z-index: 40;
+  display: block;
   /* border: 3px solid blue; */
   text-align: center;
   position: absolute;
@@ -120,7 +121,6 @@
   height: 100px;
   width: 100px;
   transform: translate(-50%, -50%) scale(4);
-
 }
 .heart {
   height: 100px;
@@ -178,4 +178,38 @@
 #letsBegin {
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.affirmationLoad {
+  opacity: 0;
+
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+.affirmationLoad img {
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.3);
+}
+.affirmationBox {
+  opacity: 0;
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+.affirmationBox img {
+  height: 100%;
+  object-fit: contain;
+  transform: scale(2);
 }

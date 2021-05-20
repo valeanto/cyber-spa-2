@@ -6,11 +6,12 @@ import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
 import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
-import circle from "../../images/rooms/r1/circle.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
 import firstA from "../../images/rooms/r1/heart_pressed.png";
 import secondA from "../../images/rooms/r1/heart_not_pressed.png";
+import onLoad from "../../images/rooms/r1/loading.gif";
+import affirmationImg from "../../images/rooms/r1/item4.png";
 
 export default function RoomOne() {
   const affirmations = [firstA, secondA];
@@ -21,6 +22,25 @@ export default function RoomOne() {
     } else {
       i = 0;
     }
+  }
+  function hideHeart() {
+    let heart = document.querySelector(".heart");
+    heart.style.opacity = "0";
+    showAffirmation();
+  }
+  function showAffirmation() {
+    setTimeout(() => {
+      let affirmationBox = document.querySelector(".affirmationLoad");
+      affirmationBox.style.opacity = "1";
+    }, 1000);
+    setTimeout(() => {
+      let affirmationBox = document.querySelector(".affirmationLoad");
+      affirmationBox.style.opacity = "0";
+    }, 8000);
+    setTimeout(() => {
+      let affirmationImg = document.querySelector(".affirmationBox");
+      affirmationImg.style.opacity = "1";
+    }, 8000);
   }
 
   return (
@@ -54,7 +74,7 @@ export default function RoomOne() {
             </Link>
           </div>
         </div>
-        <div className="r1_item">
+        <div className="r1_item" onClick={hideHeart}>
           <div className="heart">
             <img src={heart_not_pressed} alt="" className="heart_not_pressed" />
             <img src={heart_pressed} alt="" className="heart pressed" />
@@ -64,10 +84,15 @@ export default function RoomOne() {
             <img src="" alt="" id="r1_box" />
           </div>
         </div>
-
-        <div className="a_container" onClick={changeImage}>
-          <img src={`${affirmations[0]}`} alt="" />
+        <div className="affirmationLoad">
+          <img src={onLoad} alt="" className="video_container" />
         </div>
+        <div className="affirmationBox">
+          <img src={affirmationImg} alt="" className="" />
+        </div>
+        {/* <div className="a_container" onClick={changeImage}>
+          <img src={`${affirmations[0]}`} alt="" />
+        </div> */}
         {/* {projects.map((item) => (
           <div className="affirmation" onClick={() => console.log('a')}>
             <img src={`${item}`} alt="" />
