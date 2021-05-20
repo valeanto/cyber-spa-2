@@ -39,68 +39,68 @@ export default function QuestionThree() {
         </div>
         <div className="q3_content">
           <div className="row">
-            <div class="marquee">
-              <div class="marquee--inner">
+            <div className="marquee">
+              <div className="marquee--inner">
                 <Link to="/four" className="words">
                   <span>
-                    <img src={calm} class="orb"></img>
-                    <img src={exhale} class="orb"></img>
-                    <img src={inhale} class="orb"></img>
-                    <img src={relax} class="orb"></img>
-                    <img src={slow} class="orb"></img>
+                    <img src={calm} className="orb"></img>
+                    <img src={exhale} className="orb"></img>
+                    <img src={inhale} className="orb"></img>
+                    <img src={relax} className="orb"></img>
+                    <img src={slow} className="orb"></img>
                   </span>
                   <span>
-                    <img src={calm} class="orb"></img>
-                    <img src={exhale} class="orb"></img>
-                    <img src={inhale} class="orb"></img>
-                    <img src={relax} class="orb"></img>
-                    <img src={slow} class="orb"></img>
+                    <img src={calm} className="orb"></img>
+                    <img src={exhale} className="orb"></img>
+                    <img src={inhale} className="orb"></img>
+                    <img src={relax} className="orb"></img>
+                    <img src={slow} className="orb"></img>
                   </span>
                 </Link>
               </div>
             </div>
           </div>
           <div className="row">
-            <div class="marquee second-row">
-              <div class="marquee--inner">
+            <div className="marquee second-row">
+              <div className="marquee--inner">
                 <Link to="/four" className="words">
                   <span>
-                    <img src={relax} class="orb"></img>
-                    <img src={slow} class="orb"></img>
-                    <img src={three} class="orb"></img>
-                    <img src={me} class="orb"></img>
-                    <img src={praise} class="orb"></img>
-                    <img src={self} class="orb"></img>
+                    <img src={relax} className="orb"></img>
+                    <img src={slow} className="orb"></img>
+                    <img src={three} className="orb"></img>
+                    <img src={me} className="orb"></img>
+                    <img src={praise} className="orb"></img>
+                    <img src={self} className="orb"></img>
                   </span>
                   <span>
-                    <img src={relax} class="orb"></img>
-                    <img src={slow} class="orb"></img>
-                    <img src={three} class="orb"></img>
-                    <img src={me} class="orb"></img>
-                    <img src={praise} class="orb"></img>
-                    <img src={self} class="orb"></img>
+                    <img src={relax} className="orb"></img>
+                    <img src={slow} className="orb"></img>
+                    <img src={three} className="orb"></img>
+                    <img src={me} className="orb"></img>
+                    <img src={praise} className="orb"></img>
+                    <img src={self} className="orb"></img>
                   </span>
                 </Link>
               </div>
             </div>
           </div>
           <div className="row">
-            <div class="marquee">
-              <div class="marquee--inner third">
+            <div className="marquee">
+              <div className="marquee--inner third">
                 <Link to="/four" className="words">
                   <span>
-                    <img src={destination} class="orb"></img>
-                    <img src={escape} class="orb"></img>
-                    <img src={getaway} class="orb"></img>
-                    <img src={playa} class="orb"></img>
-                    <img src={sun} class="orb"></img>
+                    <img src={destination} className="orb"></img>
+                    <img src={escape} className="orb"></img>
+                    <img src={getaway} className="orb"></img>
+                    <img src={playa} className="orb"></img>
+                    <img src={sun} className="orb"></img>
                   </span>
                   <span>
-                    <img src={destination} class="orb"></img>
-                    <img src={escape} class="orb"></img>
-                    <img src={getaway} class="orb"></img>
-                    <img src={playa} class="orb"></img>
-                    <img src={sun} class="orb"></img>
+                    <img src={destination} className="orb"></img>
+                    <img src={escape} className="orb"></img>
+                    <img src={getaway} className="orb"></img>
+                    <img src={playa} className="orb"></img>
+                    <img src={sun} className="orb"></img>
                   </span>
                 </Link>
               </div>

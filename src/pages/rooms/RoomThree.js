@@ -9,6 +9,7 @@ import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
+import onload from "../../images/rooms/r3/onload.mp4";
 
 // ITEMS
 
@@ -92,61 +93,61 @@ export default function RoomThree() {
           </div>
         </div>
         <div className="int_container">
-          <div class="box">
+          <div className="box">
             <img src={bed} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={camera} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={chilli} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={dior} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={dolphinShirt} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={dolphin} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={flowerPink} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={flowerPurple} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={heart} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={horse} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={india} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={maddieSelfie} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={maddie} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={mensCup} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={moon} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={moped} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={sage} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={solenneFloor} alt="" className="stock" />
           </div>
-          <div class="box">
+          <div className="box">
             <img src={solenneSelfie} alt="" className="stock" />
           </div>
         </div>

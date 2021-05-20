@@ -21,6 +21,7 @@ import p7 from "../../images/rooms/r2/petals/p7.png";
 import p8 from "../../images/rooms/r2/petals/p8.png";
 import p9 from "../../images/rooms/r2/petals/p9.png";
 import p10 from "../../images/rooms/r2/petals/p10.png";
+import onload from "../../images/rooms/r2/onload.mp4";
 
 export default function RoomTwo() {
   return (
@@ -65,6 +66,20 @@ export default function RoomTwo() {
           <img src={p8} alt="" className="petal" />
           <img src={p9} alt="" className="petal" />
           <img src={p10} alt="" className="petal" />
+        </div>
+      </div>
+      <div className="intro">
+        <div className="logo-header">
+          <span className="logo">Analysing test results</span>
+          <ReactPlayer
+            className=""
+            url={onload}
+            width="100%"
+            height="100%"
+            controls={false}
+            loop={true}
+            playing={true}
+          />
         </div>
       </div>
     </div>

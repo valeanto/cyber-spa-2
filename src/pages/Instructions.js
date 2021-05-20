@@ -6,12 +6,12 @@ import retreatLogo from "../images/logo/retreat.png";
 import title from "../images/instructions/lets_begin.png";
 
 export default function Instructions() {
-  useEffect(() => {
-    const showImage = setTimeout(() => {
-      document.getElementById("letsBegin").style.opacity = "1";
-    }, 3000);
-    return () => clearTimeout(showImage);
-  }, []);
+  // useEffect(() => {
+  //   const showImage = setTimeout(() => {
+  //     document.getElementById("letsBegin").style.opacity = "1";
+  //   }, 3000);
+  //   return () => clearTimeout(showImage);
+  // }, []);
   return (
     <div className="instructions-landing">
       <ReactPlayer

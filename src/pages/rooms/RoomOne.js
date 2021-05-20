@@ -14,16 +14,15 @@ import firstA from "../../images/rooms/r1/heart_pressed.png";
 import secondA from "../../images/rooms/r1/heart_not_pressed.png";
 
 export default function RoomOne() {
-  useEffect(() => {
-    let intro = document.querySelector(".intro");
-    let logo = document.querySelector(".logo-header");
-    let logoSpan = document.querySelectorAll(".logo");
-    const onLoadToQuiz = setTimeout(() => {
-      intro.style.top = "-120%";
-    }, 8000);
+  // useEffect(() => {
+  //   let intro = document.querySelector(".intro");
+  //   const onLoadToQuiz = setTimeout(() => {
+  //     intro.style.top = "-120%";
+  //   }, 2000);
 
-    return () => clearTimeout(onLoadToQuiz);
-  }, []);
+  //   return () => clearTimeout(onLoadToQuiz);
+  // }, []);
+  
 
   const affirmations = [firstA, secondA];
 
@@ -95,20 +94,7 @@ export default function RoomOne() {
           </div>
         ))} */}
       </div>
-      <div class="intro">
-        <div class="logo-header">
-          <span class="logo">Analysing test results</span>
-          <ReactPlayer
-            className=""
-            url={onload}
-            width="100%"
-            height="100%"
-            controls={false}
-            loop={true}
-            playing={true}
-          />
-        </div>
-      </div>
+     
     </div>
   );
 }
