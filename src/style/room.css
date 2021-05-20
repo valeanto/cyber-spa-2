@@ -1,5 +1,5 @@
 .r_container {
-  position: relative;
+  /* position: relative; */
   width: 100%;
 }
 .r_container video {
@@ -183,4 +183,5 @@
 
 .intro {
   transition: 1s;
+  z-index:200;
 }
