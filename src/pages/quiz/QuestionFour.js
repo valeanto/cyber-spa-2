@@ -8,6 +8,10 @@ import candle from "../../images/quiz/q4/candle.png";
 import getaway from "../../images/quiz/q4/getaway.png";
 import mirror from "../../images/quiz/q4/mirror.png";
 
+import loverDoor from "../../images/quiz/q4/lover-door.png";
+import getawayDoor from "../../images/quiz/q4/getaway-door.png";
+import exhaleDoor from "../../images/quiz/q4/exhale-door.png";
+
 import onloadLover from "../../images/rooms/r1/onload.mp4";
 import onloadExhale from "../../images/rooms/r2/onload.mp4";
 import onloadGetaway from "../../images/rooms/r3/onload.mp4";
@@ -81,15 +85,15 @@ export default function QuestionFour() {
         <div className="door-container ">
           <div className="door doorOne" onClick={onLoadToRoomLover}>
             <img src={getaway} alt="" className="doorFront" />
-            {/* <img src={loverDoor} alt="" className="doorBack" /> */}
+            <img src={loverDoor} alt="" className="doorBack" />
           </div>
           <div className="door doorTwo" onClick={onLoadToRoomExhale}>
             <img src={mirror} alt="" className="doorFront" />
-            {/* <img src={exhaleDoor} alt="" className="doorBack" /> */}
+            <img src={exhaleDoor} alt="" className="doorBack" />
           </div>
           <div className="door doorThree" onClick={onLoadToRoomGetaway}>
             <img src={candle} alt="" className="doorFront" />
-            {/* <img src={getawayDoor} alt="" className="doorBack" /> */}
+            <img src={getawayDoor} alt="" className="doorBack" />
           </div>
         </div>
       </div>

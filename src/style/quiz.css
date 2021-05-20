@@ -177,6 +177,7 @@
   background: url("../images/quiz/q4/exhale-door.png");
   transform-origin: left;
   background-position: center;
+  transform: translateZ(-10px);
 }
 
 /* .doorBack {
@@ -388,4 +389,3 @@ input:-webkit-autofill:active {
   transition: 1s;
   z-index: 200;
 }
-
