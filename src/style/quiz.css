@@ -207,7 +207,7 @@
   left: 0;
 }
 .qOne {
-  top: 30%;
+  top: 40%;
 }
 .qTwo {
   top: 20%;
@@ -240,7 +240,7 @@ input {
   z-index: 10;
   color: white;
   font-family: "AL";
-  font-size: 20px;
+  font-size: 15px;
   width: 300px;
 }
 .q1_text[type="text"] {
@@ -248,6 +248,7 @@ input {
   border: none;
   border-bottom: 2px solid white;
   color: white;
+  width: 230px;
 }
 
 .q1_text::placeholder {
