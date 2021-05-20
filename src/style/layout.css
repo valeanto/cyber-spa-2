@@ -98,14 +98,12 @@ body {
   top: -20px;
   left: 0px;
   animation-delay: 1s;
-  /* border: 1px solid blue; */
 }
 #star-three {
   height: 60px;
   top: -20px;
   right: 80px;
   animation-delay: 0.6s;
-  /* border: 1px solid green; */
 }
 #star-four {
   height: 60px;
@@ -119,7 +117,6 @@ body {
   bottom: -20px;
   left: 100px;
   animation-delay: 0.1s;
-  /* border: 1px solid blue !important; */
 }
 
 #star-six {
@@ -127,10 +124,8 @@ body {
   top: -20px;
   left: 100px;
   animation-delay: 0.2s;
-  /* border: 1px solid blue !important; */
 }
 #star-seven {
-  /* border: 1px red; */
   height: 80px;
   top: 20px;
   left: 0;
@@ -182,11 +177,11 @@ body {
   width: 100%;
   height: 100%;
 }
-.left{
-  margin-left:1rem;
+.left {
+  margin-left: 1rem;
 }
-.right{
-  margin-right:1rem;
+.right {
+  margin-right: 1rem;
 }
 .doorIcon {
   opacity: 1;
@@ -223,7 +218,7 @@ h1 {
 }
 
 .about_container {
-  z-index:20;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,15 +243,15 @@ h1 {
   transform: translateY(0px);
 }
 .about_container p {
-  line-height:14px;
-  margin:0px;
+  line-height: 14px;
+  margin: 0px;
   font-family: AL;
   color: white;
   text-align: center;
   font-size: 12px;
 }
-.break{
-  margin:0.8rem 0;
+.break {
+  margin: 0.8rem 0;
 }
 .about_button {
   background: none;
@@ -279,4 +274,3 @@ h1 {
 .cross img {
   height: 100%;
 }
-

@@ -46,7 +46,6 @@
   top: -200px;
 }
 .box {
-  /* border:1px solid blue; */
   margin: 0 auto;
   width: 120px;
   height: 100px;
@@ -120,7 +119,8 @@
   left: 50%;
   height: 100px;
   width: 100px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(4);
+
 }
 .heart {
   height: 100px;
@@ -135,9 +135,10 @@
 
 .heart_not_pressed {
   opacity: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   position: absolute;
+  transition: opacity 0.2s;
 }
 .heart:hover .heart_pressed {
   opacity: 0;
@@ -168,16 +169,13 @@
 }
 
 .a_container {
-  border: 1px solid blue;
   height: 100px;
   z-index: 5;
 }
 .a_container img {
   height: 100%;
-  /* border: 1px solid pink; */
 }
 #letsBegin {
   opacity: 0;
   transition: opacity 0.3s;
 }
-

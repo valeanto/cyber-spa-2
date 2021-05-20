@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import bg from "../../images/rooms/r1/bg.mp4";
-import onload from "../../images/rooms/r1/onload.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
@@ -14,18 +13,7 @@ import firstA from "../../images/rooms/r1/heart_pressed.png";
 import secondA from "../../images/rooms/r1/heart_not_pressed.png";
 
 export default function RoomOne() {
-  // useEffect(() => {
-  //   let intro = document.querySelector(".intro");
-  //   const onLoadToQuiz = setTimeout(() => {
-  //     intro.style.top = "-120%";
-  //   }, 2000);
-
-  //   return () => clearTimeout(onLoadToQuiz);
-  // }, []);
-  
-
   const affirmations = [firstA, secondA];
-
   function changeImage() {
     let i = 0;
     if (i < affirmations.length - 1) {
@@ -33,9 +21,6 @@ export default function RoomOne() {
     } else {
       i = 0;
     }
-  }
-  function playAnim() {
-    document.getElementById("purple_circle").className = "purple_circle_active";
   }
 
   return (
@@ -70,7 +55,7 @@ export default function RoomOne() {
           </div>
         </div>
         <div className="r1_item">
-          <div className="heart" onClick={playAnim}>
+          <div className="heart">
             <img src={heart_not_pressed} alt="" className="heart_not_pressed" />
             <img src={heart_pressed} alt="" className="heart pressed" />
           </div>
@@ -79,12 +64,7 @@ export default function RoomOne() {
             <img src="" alt="" id="r1_box" />
           </div>
         </div>
-        <img
-          src={circle}
-          alt=""
-          id="purple_circle"
-          //   className="purple_circle_active"
-        />
+
         <div className="a_container" onClick={changeImage}>
           <img src={`${affirmations[0]}`} alt="" />
         </div>
@@ -94,7 +74,6 @@ export default function RoomOne() {
           </div>
         ))} */}
       </div>
-     
     </div>
   );
 }

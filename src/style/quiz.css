@@ -125,11 +125,9 @@
   top: 25%;
   height: 100%;
   left: 0;
-  /* border: 1px solid red; */
   width: 100%;
 }
 .door {
-  /* width: 25% !important; */
   width: 240px;
   position: relative;
   height: 410px;
@@ -141,31 +139,29 @@
   /* border: 2px solid purple; */
   /* width: 30%; */
   /* margin-top: 1rem; */
+  /* transform: rotateY(0deg); */
+  transform: rotateY(0deg);
+  transition: transform 999s 999s;
+  transition: transform 0.5s;
 }
 .door img {
   height: 100%;
   object-fit: contain;
+  display: inline-block;
 }
 .door:hover {
+  border: 1px solid red;
   transform: rotateY(180deg);
 }
-/* .door:active {
-  transform: rotateY(180deg);
-} */
 
 .door:hover .doorFront {
-  opacity: 0;
 }
-.door:hover .doorBack {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
+
 .doorTwo {
   margin: 0 8rem;
 }
 
 .doorFront {
-  opacity: 1;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -175,7 +171,15 @@
   height: 100%;
   transform-origin: center;
 }
-.doorBack {
+.doorFront:after {
+  content: "";
+  position: absolute;
+  background: url("../images/quiz/q4/exhale-door.png");
+  transform-origin: left;
+  background-position: center;
+}
+
+/* .doorBack {
   transform: scaleX(-1) translateZ(-1px);
   opacity: 0;
   object-fit: contain;
@@ -186,7 +190,7 @@
   width: 100%;
   height: 100%;
   transform-origin: center;
-}
+} */
 
 .q_title {
   height: 4.5%;
@@ -231,7 +235,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid blue; */
 }
 input {
   z-index: 10;
