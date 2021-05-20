@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { withRouter, Redirect } from "react-router-dom";
-
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mov";
 import title from "../../images/quiz/q1/title.png";
 
 function QuestionOne() {
   const [submitted, setSubmitted] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
@@ -35,7 +33,7 @@ function QuestionOne() {
       />
       <div className="content questionThree_container">
         <div className="q_title qOne">
-        <img src={title} alt="" className="q1_title" />
+          <img src={title} alt="" className="q1_title" />
         </div>
         <form onSubmit={handleSubmit}>
           <label>

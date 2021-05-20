@@ -61,7 +61,7 @@ export default function RoomThree() {
   }, []);
 
   return (
-    <div className="r_container">
+    <div className="react-player quiz-video r_container">
       <ReactPlayer
         className=""
         url={bg}

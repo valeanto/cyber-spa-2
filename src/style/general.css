@@ -1,6 +1,9 @@
 body {
   /* cursor: url("../images/general/cursor.png") 20 20, auto; */
   cursor: url("../images/general/mouse.png") 36 36, auto;
+  height: 100vh;
+  border:5px solid green;
+  width:100%;
 }
 .cursor {
   height: 100px;
@@ -13,7 +16,7 @@ body {
 }
 .petals_container img :hover {
   animation-play-state: stop;
-  border:1px solid blue;
+  border: 1px solid blue;
 }
 
 .petals_container img {

@@ -24,7 +24,7 @@ import p10 from "../../images/rooms/r2/petals/p10.png";
 
 export default function RoomTwo() {
   return (
-    <div className="r_container">
+    <div className="react-player quiz-video r_container">
       <ReactPlayer
         className=""
         url={bg}

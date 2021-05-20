@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import bg from "../../images/rooms/r1/bg.mp4";
+import onload from "../../images/rooms/r1/onload.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
@@ -18,8 +19,8 @@ export default function RoomOne() {
     let logo = document.querySelector(".logo-header");
     let logoSpan = document.querySelectorAll(".logo");
     const onLoadToQuiz = setTimeout(() => {
-      intro.style.top = "-100vh";
-    }, 2000);
+      intro.style.top = "-120%";
+    }, 8000);
 
     return () => clearTimeout(onLoadToQuiz);
   }, []);
@@ -39,7 +40,7 @@ export default function RoomOne() {
   }
 
   return (
-    <div className="r_container">
+    <div className="react-player quiz-video r_container">
       <ReactPlayer
         className=""
         url={bg}
@@ -99,7 +100,7 @@ export default function RoomOne() {
           <span class="logo">Analysing test results</span>
           <ReactPlayer
             className=""
-            url={bg}
+            url={onload}
             width="100%"
             height="100%"
             controls={false}
