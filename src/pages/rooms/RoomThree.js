@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import $ from "jquery";
@@ -33,7 +33,29 @@ import sage from "../../images/rooms/r3/items/sage.png";
 import solenneFloor from "../../images/rooms/r3/items/solenne-floor.png";
 import solenneSelfie from "../../images/rooms/r3/items/solenne-selfie.png";
 
+// AUDIO
+import audioFile from "../../music/r3/audio.mp3";
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
+
 export default function RoomThree() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   useEffect(() => {
     let grid_size = 10;
 
@@ -151,6 +173,15 @@ export default function RoomThree() {
             <img src={solenneSelfie} alt="" className="stock" />
           </div>
         </div>
+      </div>
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
       </div>
     </div>
   );

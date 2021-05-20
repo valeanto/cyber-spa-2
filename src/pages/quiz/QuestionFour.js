@@ -1,21 +1,39 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mov";
 import title from "../../images/quiz/q4/title.png";
-import { withRouter, Redirect } from "react-router-dom";
 
 import candle from "../../images/quiz/q4/candle.png";
 import getaway from "../../images/quiz/q4/getaway.png";
 import mirror from "../../images/quiz/q4/mirror.png";
-import loverDoor from "../../images/quiz/q4/lover-door.png";
-import getawayDoor from "../../images/quiz/q4/getaway-door.png";
-import exhaleDoor from "../../images/quiz/q4/exhale-door.png";
+
 import onloadLover from "../../images/rooms/r1/onload.mp4";
 import onloadExhale from "../../images/rooms/r2/onload.mp4";
 import onloadGetaway from "../../images/rooms/r3/onload.mp4";
 
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
+import audioFile from "../../music/general/audio.wav";
+
 export default function QuestionFour() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   let history = useHistory();
   function onLoadToRoomLover() {
     let loadLover = document.querySelector(".loadLover");
@@ -113,6 +131,15 @@ export default function QuestionFour() {
             playing={true}
           />
         </div>
+      </div>
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
       </div>
     </div>
   );

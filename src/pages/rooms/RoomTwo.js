@@ -27,7 +27,6 @@ export default function RoomTwo() {
   const toggle = () => setPlaying(!playing);
 
   useEffect(() => {
-    console.log("in cleanup");
     audio.current = new Audio(audioFile);
     audio.current.play();
   }, []);
@@ -35,7 +34,6 @@ export default function RoomTwo() {
   useEffect(() => {
     return () => {
       audio.current.pause();
-      console.log("in cleanup");
     };
   }, []);
   useEffect(() => {

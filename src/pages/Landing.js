@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-
 import { Link } from "react-router-dom";
 import backgroundVideo from "../images/bg/background.mp4";
 import retreatLogo from "../images/logo/retreat.png";
@@ -8,8 +7,28 @@ import enterLogo from "../images/logo/enter.png";
 import starImage from "../images/general/star.png";
 import copyright from "../images/general/copyright.png";
 import cyberSpaIcon from "../images/general/cyber-spa.png";
+import audioFile from "../music/general/audio.wav";
+import play from "../images/general/play.png";
+import pause from "../images/general/pause.png";
 
 export default function Landing() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   return (
     <div class="background-landing">
       <ReactPlayer

@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mov";
 import title from "../../images/quiz/q1/title.png";
+import audioFile from "../../music/general/audio.wav";
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
 
 function QuestionOne() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,6 +65,15 @@ function QuestionOne() {
             />
           </label>
         </form>
+      </div>
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
       </div>
     </div>
   );

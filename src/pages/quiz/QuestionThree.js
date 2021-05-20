@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mov";
@@ -20,7 +20,28 @@ import getaway from "../../images/quiz/q3/words/lineThree/getaway.png";
 import playa from "../../images/quiz/q3/words/lineThree/playa.png";
 import sun from "../../images/quiz/q3/words/lineThree/sun.png";
 
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
+import audioFile from "../../music/general/audio.wav";
+
 export default function QuestionThree() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   return (
     <div className="questionContainer">
       <img src={retreatLogo} alt={title} className="retreatLogo" />
@@ -108,7 +129,15 @@ export default function QuestionThree() {
           </div>
         </div>
       </div>
-      <Link to="/question-four">Room four </Link>
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
+      </div>
     </div>
   );
 }
