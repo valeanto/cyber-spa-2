@@ -20,13 +20,23 @@ body {
   padding: 1rem;
 }
 .sound {
-  height: 15px;
-  width: 60px;
+  z-index: 200;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  height: 25px;
+  width: 30px;
   display: flex;
-  padding-top: 1rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
+}
+.sound-icon-con {
+  margin-right: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 .sound img {
+  z-index: 200;
   height: 100%;
   object-fit: contain;
 }

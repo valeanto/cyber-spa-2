@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import bg from "../../images/rooms/r1/bg.mp4";
@@ -12,8 +12,30 @@ import firstA from "../../images/rooms/r1/heart_pressed.png";
 import secondA from "../../images/rooms/r1/heart_not_pressed.png";
 import onLoad from "../../images/rooms/r1/loading.gif";
 import affirmationImg from "../../images/rooms/r1/item4.png";
+import audioFile from "../../music/r1/audio.wav";
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
 
 export default function RoomOne() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    console.log("in cleanup");
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+      console.log("in cleanup");
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   const affirmations = [firstA, secondA];
   function changeImage() {
     let i = 0;
@@ -99,6 +121,18 @@ export default function RoomOne() {
           </div>
         ))} */}
       </div>
+      {/* <div className="soundToggle"> */}
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
+      </div>
+      {/* <button onClick={toggle}>{playing ? "Pause" : "Play"}</button> */}
+      {/* </div> */}
     </div>
   );
 }

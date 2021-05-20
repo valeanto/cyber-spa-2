@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-
 import bg from "../../images/rooms/r2/bg.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
-import heart_pressed from "../../images/rooms/r1/heart_pressed.png";
-import heart_not_pressed from "../../images/rooms/r1/heart_not_pressed.png";
-import circle from "../../images/rooms/r1/circle.png";
-// import doorRight from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
 import retreatLogo from "../../images/logo/retreat.png";
 import p1 from "../../images/rooms/r2/petals/p1.png";
@@ -22,8 +17,30 @@ import p8 from "../../images/rooms/r2/petals/p8.png";
 import p9 from "../../images/rooms/r2/petals/p9.png";
 import p10 from "../../images/rooms/r2/petals/p10.png";
 import onload from "../../images/rooms/r2/onload.mp4";
+import audioFile from "../../music/r2/audio.mp3";
+import play from "../../images/general/play.png";
+import pause from "../../images/general/pause.png";
 
 export default function RoomTwo() {
+  let audio = useRef();
+  const [playing, setPlaying] = useState(true);
+  const toggle = () => setPlaying(!playing);
+
+  useEffect(() => {
+    console.log("in cleanup");
+    audio.current = new Audio(audioFile);
+    audio.current.play();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      audio.current.pause();
+      console.log("in cleanup");
+    };
+  }, []);
+  useEffect(() => {
+    playing ? audio.current.play() : audio.current.pause();
+  }, [playing]);
   return (
     <div className="react-player quiz-video r_container">
       <ReactPlayer
@@ -81,6 +98,15 @@ export default function RoomTwo() {
             playing={true}
           />
         </div>
+      </div>
+      <div className="sound">
+        <button onClick={toggle} className="sound-icon-con">
+          {playing ? (
+            <img src={pause} className="pause" />
+          ) : (
+            <img src={play} className="play" />
+          )}
+        </button>
       </div>
     </div>
   );

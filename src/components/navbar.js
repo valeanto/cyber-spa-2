@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import aboutTitle from "../images/instructions/logo.png";
 import cross from "../images/instructions/cross.png";
-import play from "../images/general/play.png";
-import pause from "../images/general/pause.png";
+
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -77,10 +76,6 @@ export default function Navbar() {
           </button>
         </div>
       )}
-      <div className="sound">
-        <img src={play} alt="" className="play" />
-        <img src={pause} alt="" className="pause" />
-      </div>
     </div>
   );
 }

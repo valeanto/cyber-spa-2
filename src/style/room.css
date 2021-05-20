@@ -213,3 +213,9 @@
   object-fit: contain;
   transform: scale(2);
 }
+.soundToggle {
+  position:absolute;
+  top: 33rem;
+  border: 1px solid red;
+  left:100px;
+}
