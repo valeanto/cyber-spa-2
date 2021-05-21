@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import instructionsVideo from "../images/bg/ins_bg1.mp4";
+import instructionsVideo from "../images/instructions/bg.mp4";
 import retreatLogo from "../images/logo/retreat.png";
 import title from "../images/instructions/lets_begin.png";
 
@@ -9,7 +9,7 @@ export default function Instructions() {
   useEffect(() => {
     const showImage = setTimeout(() => {
       document.getElementById("letsBegin").style.opacity = "1";
-    }, 1000);
+    }, 30000);
     return () => clearTimeout(showImage);
   }, []);
   return (

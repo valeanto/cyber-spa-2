@@ -8,8 +8,8 @@ import starImage from "../images/general/star.png";
 import copyright from "../images/general/copyright.png";
 import cyberSpaIcon from "../images/general/cyber-spa.png";
 import audioFile from "../music/general/audio.wav";
-import play from "../images/general/play.png";
-import pause from "../images/general/pause.png";
+// import play from "../images/general/play.png";
+// import pause from "../images/general/pause.png";
 
 export default function Landing() {
   let audio = useRef();
