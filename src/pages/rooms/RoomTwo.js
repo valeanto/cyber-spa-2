@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import bg from "../../images/rooms/r2/bg.mp4";
+import bg from "../../images/rooms/r2/bg-petals.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
@@ -70,7 +70,7 @@ export default function RoomTwo() {
             </Link>
           </div>
         </div>
-        <div className="petals_container">
+        {/* <div className="petals_container">
           <img src={p1} alt="" className="petal" />
           <img src={p2} alt="" className="petal" />
           <img src={p3} alt="" className="petal" />
@@ -81,7 +81,7 @@ export default function RoomTwo() {
           <img src={p8} alt="" className="petal" />
           <img src={p9} alt="" className="petal" />
           <img src={p10} alt="" className="petal" />
-        </div>
+        </div> */}
       </div>
       <div className="intro">
         <div className="logo-header">
