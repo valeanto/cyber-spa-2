@@ -21,6 +21,8 @@ export default function QuestionTwo() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
+
     audio.current.play();
   }, []);
 

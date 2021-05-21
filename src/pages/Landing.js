@@ -18,6 +18,8 @@ export default function Landing() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
+
     audio.current.play();
   }, []);
 

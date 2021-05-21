@@ -31,6 +31,8 @@ export default function QuestionThree() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
+
     audio.current.play();
   }, []);
 

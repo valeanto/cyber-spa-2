@@ -14,6 +14,8 @@ function QuestionOne() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
+
     audio.current.play();
   }, []);
 

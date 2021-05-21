@@ -27,6 +27,8 @@ export default function QuestionFour() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
+
     audio.current.play();
   }, []);
 

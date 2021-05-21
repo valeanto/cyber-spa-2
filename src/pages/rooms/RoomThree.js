@@ -45,6 +45,7 @@ export default function RoomThree() {
 
   useEffect(() => {
     audio.current = new Audio(audioFile);
+    audio.current.loop = true;
     audio.current.play();
   }, []);
 
@@ -56,6 +57,7 @@ export default function RoomThree() {
   useEffect(() => {
     playing ? audio.current.play() : audio.current.pause();
   }, [playing]);
+
   useEffect(() => {
     let grid_size = 10;
 
