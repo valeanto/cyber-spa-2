@@ -43,7 +43,7 @@
 }
 .int_row:nth-child(1) .box:nth-child(3) {
   right: 250px;
-  top: 25rem;
+  top: calc(100vh - 200px);
 }
 .int_row:nth-child(2) .box:nth-child(1) {
   border: 1px solid orange;
