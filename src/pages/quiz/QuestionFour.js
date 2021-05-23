@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import ReactPlayer from "react-player";
-import quizOneBackground from "../../images/bg/quiz_bg.mov";
+import quizOneBackground from "../../images/bg/quiz_bg.mp4";
 import title from "../../images/quiz/q4/title.png";
 
 import candle from "../../images/quiz/q4/candle.png";

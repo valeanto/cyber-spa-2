@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import ReactPlayer from "react-player";
-import quizOneBackground from "../../images/bg/quiz_bg.mov";
+import quizOneBackground from "../../images/bg/quiz_bg.mp4";
 import title from "../../images/quiz/q1/title.png";
 import audioFile from "../../music/general/audio.wav";
 import play from "../../images/general/play.png";
