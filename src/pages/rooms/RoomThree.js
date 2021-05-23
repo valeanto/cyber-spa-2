@@ -40,8 +40,11 @@ import moon from "../../images/rooms/r3/items/moon.png";
 import moped from "../../images/rooms/r3/items/moped.png";
 import rock from "../../images/rooms/r3/items/rock.png";
 import sage from "../../images/rooms/r3/items/sage.png";
+import shell from "../../images/rooms/r3/items/shell.png";
 import solenneFloor from "../../images/rooms/r3/items/solenne-floor.png";
 import solenneSelfie from "../../images/rooms/r3/items/solenne-selfie.png";
+import solennePose from "../../images/rooms/r3/items/solenne-pose.png";
+import solenneRing from "../../images/rooms/r3/items/Solenne ring-min.png";
 
 // AUDIO
 import audioFile from "../../music/r3/audio.mp3";
@@ -129,30 +132,45 @@ export default function RoomThree() {
         <div className="int_container">
           <div className="int_row">
             <div className="box">
-              <img src={bed} alt="" className="stock" />
+              <img src={glasses} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={camera} alt="" className="stock" />
+              <img src={solenneSelfie} alt="" className="stock" />
             </div>
+            <div className="box">
+              <img src={dolphin} alt="" className="stock" />
+            </div>
+          </div>
+          <div className="int_row">
             <div className="box">
               <img src={cherry} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={cherry4d} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={chilli} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={cup} alt="" className="stock" />
+              <img src={maddie} alt="" className="stock" />
             </div>
             <div className="box">
               <img src={drop} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={drop2} alt="" className="stock" />
+              <img src={shell} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={horse} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={solennePose} alt="" className="stock" />
             </div>
 
+            <div className="box">
+              <img src={flowerPink} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={solenneRing} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={camera} alt="" className="stock" />
+            </div>
+            {/* 
             <div className="box">
               <img src={dior} alt="" className="stock" />
             </div>
@@ -162,14 +180,10 @@ export default function RoomThree() {
             <div className="box">
               <img src={dolphin} alt="" className="stock" />
             </div>
-          </div>
-          <div className="int_row">
             <div className="box">
               <img src={earthSpin} alt="" className="stock" />
             </div>
-            <div className="box">
-              <img src={glasses} alt="" className="stock" />
-            </div>
+
             <div className="box">
               <img src={handShoes} alt="" className="stock" />
             </div>
@@ -222,7 +236,7 @@ export default function RoomThree() {
             </div>
             <div className="box">
               <img src={solenneSelfie} alt="" className="stock" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

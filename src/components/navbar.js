@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import aboutTitle from "../images/instructions/logo.png";
-import cross from "../images/instructions/cross.png";
+// import cross from "../images/instructions/cross.png";
+import { CSSTransition } from "react-transition-group";
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);

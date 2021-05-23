@@ -33,17 +33,20 @@
   position: relative;
 }
 .box:nth-child(1) {
+  border: 1px solid orange;
   position: absolute;
-  left: 100px;
-  top: -300px;
+  right: 100px;
+  top: 5rem;
 }
 .box:nth-child(2) {
-  left: 200px;
-  top: calc(100vh - 300px);
+  border: 1px solid red;
+  left: 7rem;
+  top: 21rem;
 }
 .box:nth-child(3) {
-  left: 300px;
-  top: calc(100vh - 20rem);
+  border: 1px solid blue;
+  right: 250px;
+  top: 25rem;
 }
 .box:nth-child(4) {
   left: 800px;
