@@ -154,6 +154,8 @@ export default function RoomThree() {
             <div className="box">
               <img src={shell} alt="" className="stock" />
             </div>
+          </div>
+          <div className="int_row">
             <div className="box">
               <img src={horse} alt="" className="stock" />
             </div>
