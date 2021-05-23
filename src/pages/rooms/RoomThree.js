@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import "jquery-ui-bundle";
 import "jquery-ui-bundle/jquery-ui.css";
-import bg from "../../images/rooms/r3/bg.mp4";
+import bg from "../../images/rooms/r3/new-bg.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";
@@ -15,20 +15,31 @@ import onload from "../../images/rooms/r3/onload.mp4";
 
 import bed from "../../images/rooms/r3/items/bed.png";
 import camera from "../../images/rooms/r3/items/camera.png";
+import cherry4d from "../../images/rooms/r3/items/cherry-4d.png";
+import cherry from "../../images/rooms/r3/items/cherry.png";
 import chilli from "../../images/rooms/r3/items/chilli.png";
+import cup from "../../images/rooms/r3/items/cup.png";
 import dior from "../../images/rooms/r3/items/dior.png";
 import dolphinShirt from "../../images/rooms/r3/items/dolphin-shirt.png";
 import dolphin from "../../images/rooms/r3/items/dolphin.png";
+import drop from "../../images/rooms/r3/items/drop.png";
+import drop2 from "../../images/rooms/r3/items/drop2.png";
+import earthSpin from "../../images/rooms/r3/items/earth-spinning.png";
 import flowerPink from "../../images/rooms/r3/items/flower-pink.png";
 import flowerPurple from "../../images/rooms/r3/items/flower-purple.png";
+import glasses from "../../images/rooms/r3/items/glasses.png";
+import handShoes from "../../images/rooms/r3/items/handShoes.png";
 import heart from "../../images/rooms/r3/items/heart.png";
 import horse from "../../images/rooms/r3/items/horse.png";
 import india from "../../images/rooms/r3/items/india.png";
+import lilypad from "../../images/rooms/r3/items/lillypad.png";
 import maddieSelfie from "../../images/rooms/r3/items/maddie-selfie.png";
 import maddie from "../../images/rooms/r3/items/maddie.png";
+import maddieSkii from "../../images/rooms/r3/items/maddie-skii.png";
 import mensCup from "../../images/rooms/r3/items/mens-cup.png";
 import moon from "../../images/rooms/r3/items/moon.png";
 import moped from "../../images/rooms/r3/items/moped.png";
+import rock from "../../images/rooms/r3/items/rock.png";
 import sage from "../../images/rooms/r3/items/sage.png";
 import solenneFloor from "../../images/rooms/r3/items/solenne-floor.png";
 import solenneSelfie from "../../images/rooms/r3/items/solenne-selfie.png";
@@ -86,17 +97,17 @@ export default function RoomThree() {
   }, []);
 
   return (
-    <div className="react-player quiz-video r_container">
+    <div className="react-player quiz-video r_container ">
       <ReactPlayer
-        className=""
+        className="fixed"
         url={bg}
         width="100%"
-        height="100%"
+        height=""
         controls={false}
         loop={true}
         playing={true}
       />
-      <div className="r_content">
+      <div className="r3_content">
         <Link to="/">
           <div className="logo">
             <img src={retreatLogo} alt="" />

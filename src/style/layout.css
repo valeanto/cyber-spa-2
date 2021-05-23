@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .background-landing {
   width: 100%;
@@ -21,7 +21,7 @@ body {
 }
 .sound {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 0;
   height: 25px;
