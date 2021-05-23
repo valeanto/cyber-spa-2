@@ -14,68 +14,38 @@ body {
   height: 100px;
 }
 .petals_container {
-  /* border: 3px solid pink; */
   width: 100%;
   z-index: 4;
   height: 100%;
 }
 
-/* .petals_container img {
-  object-fit: contain;
-  position: absolute;
-} */
-/* 
+.petals_container img {
+  /* border: 1px solid red; */
+}
 .petals_container img:nth-child(1) {
-  left: 0;
-  bottom: 0;
-  animation: petals-left 30s infinite alternate;
+  animation-delay: 0.7s;
 }
 .petals_container img:nth-child(2) {
-  right: 0;
-  animation: petals-right 30s infinite alternate;
+  animation-delay: 1s;
 }
 .petals_container img:nth-child(3) {
-  left: 0;
-  bottom: 0;
-
-  animation: petals-left 30s infinite alternate;
+  animation-delay: 3s;
 }
 .petals_container img:nth-child(4) {
-  right: 0;
-  bottom: 0;
-
-  animation: petals-right 30s infinite alternate;
+  animation-delay: 2s;
 }
 .petals_container img:nth-child(5) {
-  left: 0;
-  animation: petals-left 30s infinite alternate;
+  animation-delay: 0.5s;
 }
 .petals_container img:nth-child(6) {
-  right: 0;
-  bottom: 0;
-
-  animation: petals-right 30s infinite alternate;
+  animation-delay: 0.75s;
 }
 .petals_container img:nth-child(7) {
-  top: 0;
-  bottom: 0;
-
-  animation: petals-right 30s infinite alternate;
+  animation-delay: 0.25s;
 }
 .petals_container img:nth-child(8) {
-  right: 0;
-  bottom: 0;
-
-  animation: petals-right 30s infinite alternate;
+  animation-delay: 1.5s;
 }
-.petals_container img:nth-child(9) {
-  right: 0;
-  animation: petals-right 30s infinite alternate;
-}
-.petals_container img:nth-child(10) {
-  right: 0;
-  animation: petals-right 30s infinite alternate;
-} */
 
 @keyframes petals-left {
   0% {

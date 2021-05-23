@@ -337,7 +337,7 @@
   display: inline-block;
   margin-right: 100px;
   margin-bottom: 200px;
-  animation: dot 10s infinite alternate;
+  animation: dot 15s infinite alternate;
 }
 
 .dot:nth-child(1) {
