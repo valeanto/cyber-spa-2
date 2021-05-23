@@ -28,7 +28,7 @@
 }
 .int_row {
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   position: relative;
 }
@@ -120,12 +120,27 @@
   top: calc(100vh - 90%);
 }
 .int_row:nth-child(6) .box:nth-child(2) {
-  border: 1px solid pink;
+  border: 1px solid red;
   left: calc(100vw - 30%);
   top: calc(100vh - 90%);
 }
 .int_row:nth-child(6) .box:nth-child(3) {
-  border: 1px solid pink;
+  border: 1px solid orange;
+  left: calc(100vw - 30%);
+  top: calc(100vh - 90%);
+}
+.int_row:nth-child(6) .box:nth-child(3) {
+  border: 1px solid green;
+  left: calc(100vw - 30%);
+  top: calc(100vh - 90%);
+}
+.int_row:nth-child(6) .box:nth-child(3) {
+  border: 1px solid blue;
+  left: calc(100vw - 30%);
+  top: calc(100vh - 90%);
+}
+.int_row:nth-child(6) .box:nth-child(3) {
+  border: 1px solid white;
   left: calc(100vw - 30%);
   top: calc(100vh - 90%);
 }

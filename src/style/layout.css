@@ -58,21 +58,20 @@ body {
 }
 .landing-link img:nth-child(1) {
   position: absolute;
-  /* display: block; */
+  display: block;
   opacity: 1;
-  transition: opacity 0.9;
-
-  /* top:0; */
+  transition: opacity 0.25s;
+  top: 0;
 }
 .landing-link:hover img:nth-child(1) {
   opacity: 0;
 }
 .landing-link img:nth-child(2) {
-  position: absolute;
   opacity: 0;
+  transform: translateX(5.6%) translateY(4%) scale(0.9);
 }
 .landing-link:hover img:nth-child(2) {
-  /* display: block; */
+  display: block;
   opacity: 1;
 }
 .landing_footer {

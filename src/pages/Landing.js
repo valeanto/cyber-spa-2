@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import backgroundVideo from "../images/bg/bg.mp4";
-import retreatLogo from "../images/logo/retreat.png";
+import backgroundVideo from "../images/bg/quiz_bg.mp4";
+import retreatLogo from "../images/logo/new-logo.png";
 import enterLogo from "../images/logo/enter.png";
 import starImage from "../images/general/star.png";
 import copyright from "../images/general/copyright.png";
