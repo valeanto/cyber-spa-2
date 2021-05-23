@@ -32,7 +32,7 @@ export default function Landing() {
     playing ? audio.current.play() : audio.current.pause();
   }, [playing]);
   return (
-    <div class="background-landing">
+    <div className="background-landing">
       <ReactPlayer
         className=""
         url={backgroundVideo}

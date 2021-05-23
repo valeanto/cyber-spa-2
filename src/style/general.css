@@ -14,15 +14,12 @@ body {
   z-index: 4;
   height: 100%;
 }
-.petals_container img :hover {
-  animation-play-state: stop;
-}
 
-.petals_container img {
+/* .petals_container img {
   object-fit: contain;
   position: absolute;
-}
-
+} */
+/* 
 .petals_container img:nth-child(1) {
   left: 0;
   bottom: 0;
@@ -73,7 +70,7 @@ body {
 .petals_container img:nth-child(10) {
   right: 0;
   animation: petals-right 30s infinite alternate;
-}
+} */
 
 @keyframes petals-left {
   0% {
@@ -90,9 +87,6 @@ body {
   100% {
     right: 80%;
   }
-}
-.petals_container img:nth-child(1) {
-  left: 10rem;
 }
 
 .opac {
