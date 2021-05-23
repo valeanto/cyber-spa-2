@@ -13,17 +13,17 @@
   top: 0;
 }
 .r3_content {
-  height: 200vh !important;
+  /* height: 200vh !important; */
 }
 .int_container {
   /* border: 10px solid purple; */
-  z-index: 2;
+  z-index: 200;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5%;
   /* top: 76% !important;
   left: 2% !important; */
-  width: 100%;
+  width: 89%;
   height: 100%;
 }
 .int_row {
@@ -33,9 +33,9 @@
   position: relative;
 }
 .int_row:nth-child(1) .box:nth-child(1) {
-  position: absolute;
-  left: calc(100vw - 17rem);
-  top: 5rem;
+ 
+  left: calc(100vw - 30%);
+  top: calc(100vh - 90%);
 }
 .int_row:nth-child(1) .box:nth-child(2) {
   left: 15rem;
@@ -48,7 +48,7 @@
 .int_row:nth-child(2) .box:nth-child(1) {
   position: absolute;
   left: calc(100vw - 19rem);
-  transform: scale(2);
+  /* transform: scale(2); */
   top: 2rem;
   /* border: 1px solid green; */
 }
