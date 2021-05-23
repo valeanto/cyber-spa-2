@@ -312,7 +312,7 @@ input:-webkit-autofill:active {
 .orb {
   display: inline-block;
   margin: 0 150px;
-  top:50%;
+  top: 50%;
   transform: translateY(25%);
   float: left;
   transition: all 0.2s ease-out;
@@ -346,10 +346,10 @@ input:-webkit-autofill:active {
   width: 400%;
   position: absolute;
 
-  animation: marquee 20s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 .second-row .marquee--inner {
-  animation: marquee-right 20s linear infinite;
+  animation: marquee-right 40s linear infinite;
 }
 .marquee--inner:hover {
   animation-play-state: paused;
