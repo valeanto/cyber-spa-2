@@ -129,10 +129,12 @@ export default function RoomTwo() {
             <img src={p5} alt="" className="dot" />
             <img src={p6} alt="" className="dot" />
           </div>
-          <img src={p7} alt="" className="dot" />
-          <img src={p8} alt="" className="dot" />
-          <img src={p9} alt="" className="dot" />
-          <img src={p10} alt="" className="dot" />
+          <div className="petal-row">
+            <img src={p7} alt="" className="dot" />
+            <img src={p8} alt="" className="dot" />
+            <img src={p9} alt="" className="dot" />
+            <img src={p10} alt="" className="dot" />
+          </div>
 
           {/*    
           <div className="dot">
