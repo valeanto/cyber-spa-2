@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import "jquery-ui-bundle";
 import "jquery-ui-bundle/jquery-ui.css";
-import bg from "../../images/rooms/r3/new-bg.mp4";
+import bg from "../../images/rooms/r3/bg.mp4";
 import doorIconColorPrev from "../../images/rooms/nav/back.png";
 import doorIconColorNext from "../../images/rooms/nav/next.png";
 import doorIcon from "../../images/rooms/nav/frame.png";

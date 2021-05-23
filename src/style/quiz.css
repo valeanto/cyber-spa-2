@@ -151,6 +151,7 @@
   width: 100%;
 }
 .door:hover {
+  transition: transform 0.5s;
   transform: rotateY(180deg);
 }
 
@@ -181,12 +182,12 @@
 }
 .doorOne:after {
   background-repeat: no-repeat;
-  background: url("../images/quiz/q4/lover-door.png");
+  background: url("../images/quiz/q4/exhale-door.png");
   transform: rotateY(180deg) translateZ(3px) translateX(1px) !important;
 }
 .doorTwo:after {
   background-repeat: no-repeat;
-  background: url("../images/quiz/q4/exhale-door.png");
+  background: url("../images/quiz/q4/lover-door.png");
 }
 .doorThree:after {
   background-repeat: no-repeat;
