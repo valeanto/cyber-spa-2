@@ -96,7 +96,7 @@
 .q3_title {
   top: 3rem;
   object-fit: contain;
-  width: 50%;
+  width: 46%;
 }
 
 .q3_content {
@@ -151,7 +151,7 @@
   width: 100%;
 }
 .door:hover {
-  transition: transform 0.5s;
+  transition: transform 0.6s;
   transform: rotateY(180deg);
 }
 
@@ -312,10 +312,12 @@ input:-webkit-autofill:active {
 .orb {
   display: inline-block;
   margin: 0 150px;
+  top:50%;
+  transform: translateY(25%);
   float: left;
   transition: all 0.2s ease-out;
   object-fit: contain;
-  height: 40px;
+  height: 30px;
 }
 
 .orb:hover {

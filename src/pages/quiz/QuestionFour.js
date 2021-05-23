@@ -85,13 +85,13 @@ export default function QuestionFour() {
           <img src={title} alt={title} className="question_title" />
         </div>
         <div className="door-container ">
-          <div className="door doorOne" onClick={onLoadToRoomLover}>
+          <div className="door doorOne" onClick={onLoadToRoomGetaway}>
             <img src={getaway} alt="" className="doorFront" />
           </div>
-          <div className="door doorTwo" onClick={onLoadToRoomExhale}>
+          <div className="door doorTwo" onClick={onLoadToRoomLover}>
             <img src={mirror} alt="" className="doorFront" />
           </div>
-          <div className="door doorThree" onClick={onLoadToRoomGetaway}>
+          <div className="door doorThree" onClick={onLoadToRoomExhale}>
             <img src={candle} alt="" className="doorFront" />
           </div>
         </div>
