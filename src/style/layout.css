@@ -225,6 +225,7 @@ h1 {
 
 .about_container {
   z-index: 20;
+  /* transition: 0.5s; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,9 +240,9 @@ h1 {
   position: absolute;
   top: 3rem;
   left: 1rem;
-  width: 320px;
-  height: 430px;
-  padding: 1.5rem 0.5rem;
+  width: 280px;
+  height: 360px;
+  padding: 1.5rem 1.5rem;
 }
 .about_title {
   /* border: 1px solid red; */

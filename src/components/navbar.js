@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import aboutTitle from "../images/instructions/logo.png";
 import cross from "../images/instructions/cross.png";
 
-
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <div className="navbar">
-      <button className="about_button" onMouseOver={() => setToggle(!toggle)}>
+      <button
+        className="about_button"
+        onMouseOver={() => setToggle(!toggle)}
+        onClick={() => setToggle(!toggle)}
+      >
         about
       </button>
       {toggle && (
         <div className="about_container">
           <img src={aboutTitle} alt="" className="about_title" />
-
           <p>
             A DIGITAL SPA EXPERIENCE TO EXPLORE, RELAX AND ESCAPE. TRANSLATING
             THE IDEA OF A PHYSICAL SPA INTO THE DIGITAL.
@@ -71,9 +73,9 @@ export default function Navbar() {
           <div className="break"></div>
 
           <p> THANKS TO EVERYONE INVOLVED</p>
-          <button onClick={() => setToggle(!toggle)} className="cross">
+          {/* <button onClick={() => setToggle(!toggle)} className="cross">
             <img src={cross} alt="" />
-          </button>
+          </button> */}
         </div>
       )}
     </div>
