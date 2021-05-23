@@ -70,7 +70,7 @@ export default function QuestionFour() {
   }
 
   return (
-    <div className="questionContainer">
+    <div className="questionContainer single">
       <ReactPlayer
         className="react-player quiz-video"
         url={quizOneBackground}
@@ -80,7 +80,7 @@ export default function QuestionFour() {
         loop={true}
         playing={true}
       />
-      <div className="contentFour questionThree_container">
+      <div className="contentFour questionThree_container ">
         <div className="q_title qFour">
           <img src={title} alt={title} className="question_title" />
         </div>

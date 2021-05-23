@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
-import backgroundVideo from "../images/bg/background.mp4";
+import backgroundVideo from "../images/bg/bg.mp4";
 import retreatLogo from "../images/logo/retreat.png";
 import enterLogo from "../images/logo/enter.png";
 import starImage from "../images/general/star.png";
@@ -32,7 +32,7 @@ export default function Landing() {
     playing ? audio.current.play() : audio.current.pause();
   }, [playing]);
   return (
-    <div className="background-landing">
+    <div className="background-landing single">
       <ReactPlayer
         className=""
         url={backgroundVideo}

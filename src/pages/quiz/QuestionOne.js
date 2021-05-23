@@ -43,7 +43,7 @@ function QuestionOne() {
     );
   }
   return (
-    <div className="questionContainer">
+    <div className="questionContainer single">
       <ReactPlayer
         className="react-player quiz-video"
         url={quizOneBackground}

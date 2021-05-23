@@ -35,7 +35,7 @@ export default function QuestionTwo() {
     playing ? audio.current.play() : audio.current.pause();
   }, [playing]);
   return (
-    <div className="questionContainer">
+    <div className="questionContainer single">
       <img src={retreatLogo} alt={title} className="retreatLogo" />
 
       <ReactPlayer

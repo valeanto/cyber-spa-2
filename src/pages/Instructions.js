@@ -13,7 +13,7 @@ export default function Instructions() {
     return () => clearTimeout(showImage);
   }, []);
   return (
-    <div className="instructions-landing">
+    <div className="instructions-landing single">
       <ReactPlayer
         className="react-player fixed-bottom"
         url={instructionsVideo}

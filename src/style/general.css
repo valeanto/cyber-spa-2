@@ -5,6 +5,9 @@ body {
   /* border: 5px solid green; */
   width: 100%;
 }
+.single {
+  overflow: hidden;
+}
 .cursor {
   height: 100px;
 }

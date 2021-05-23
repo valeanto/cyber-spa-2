@@ -343,7 +343,7 @@ input:-webkit-autofill:active {
 .marquee--inner {
   transform: translateY(18px);
   display: block;
-  width: 500%;
+  width: 400%;
   position: absolute;
 
   animation: marquee 20s linear infinite;

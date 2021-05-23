@@ -34,6 +34,7 @@ import india from "../../images/rooms/r3/items/india.png";
 import lillypad from "../../images/rooms/r3/items/lillypad.png";
 import maddieSelfie from "../../images/rooms/r3/items/maddie-selfie.png";
 import maddie from "../../images/rooms/r3/items/maddie.png";
+import maddieLaying from "../../images/rooms/r3/items/maddie-laying-down.png";
 import maddieSkii from "../../images/rooms/r3/items/maddie-skii.png";
 import mensCup from "../../images/rooms/r3/items/mens-cup.png";
 import moon from "../../images/rooms/r3/items/moon.png";
@@ -45,6 +46,7 @@ import solenneFloor from "../../images/rooms/r3/items/solenne-floor.png";
 import solenneSelfie from "../../images/rooms/r3/items/solenne-selfie.png";
 import solennePose from "../../images/rooms/r3/items/solenne-pose.png";
 import solenneRing from "../../images/rooms/r3/items/Solenne ring-min.png";
+import strawberry from "../../images/rooms/r3/items/strawberry.png";
 
 // AUDIO
 import audioFile from "../../music/r3/audio.mp3";
@@ -132,45 +134,69 @@ export default function RoomThree() {
         <div className="int_container">
           <div className="int_row">
             <div className="box">
-              <img src={glasses} alt="" className="stock" />
+              <img src={dolphin} alt="" className="stock" />
             </div>
             <div className="box">
               <img src={solenneSelfie} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={dolphin} alt="" className="stock" />
+              <img src={cherry} alt="" className="stock" />
             </div>
           </div>
           <div className="int_row">
             <div className="box">
-              <img src={cherry} alt="" className="stock" />
+              <img src={moon} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={maddie} alt="" className="stock" />
+              <img src={glasses} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={maddieLaying} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={horse} alt="" className="stock" />
+            </div>
+          </div>
+          <div className="int_row">
+            <div className="box">
+              <img src={solennePose} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={cherry4d} alt="" className="stock" />
             </div>
             <div className="box">
               <img src={drop} alt="" className="stock" />
             </div>
-            <div className="box">
-              <img src={shell} alt="" className="stock" />
-            </div>
           </div>
           <div className="int_row">
             <div className="box">
-              <img src={horse} alt="" className="stock" />
+              <img src={camera} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={solennePose} alt="" className="stock" />
+              <img src={india} alt="" className="stock" />
             </div>
-
             <div className="box">
-              <img src={flowerPink} alt="" className="stock" />
+              <img src={rock} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={maddieSkii} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={handShoes} alt="" className="stock" />
+            </div>
+            </div>
+            <div className='int_row'>
+            <div className="box">
+              <img src={flowerPurple} alt="" className="stock" />
             </div>
             <div className="box">
               <img src={solenneRing} alt="" className="stock" />
             </div>
             <div className="box">
-              <img src={camera} alt="" className="stock" />
+              <img src={strawberry} alt="" className="stock" />
+            </div>
+            <div className="box">
+              <img src={heart} alt="" className="stock" />
             </div>
             {/* 
             <div className="box">

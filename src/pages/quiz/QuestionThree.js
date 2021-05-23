@@ -56,7 +56,7 @@ export default function QuestionThree() {
         loop={true}
         playing={true}
       />
-      <div className="questionThree_container">
+      <div className="questionThree_container single">
         <div className="q_title qThree">
           <img src={title} className="q3_title" alt="" />
         </div>
