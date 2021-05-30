@@ -184,8 +184,8 @@ export default function RoomThree() {
             <div className="box">
               <img src={handShoes} alt="" className="stock" />
             </div>
-            </div>
-            <div className='int_row'>
+          </div>
+          <div className="int_row">
             <div className="box">
               <img src={flowerPurple} alt="" className="stock" />
             </div>
@@ -198,73 +198,6 @@ export default function RoomThree() {
             <div className="box">
               <img src={heart} alt="" className="stock" />
             </div>
-            {/* 
-            <div className="box">
-              <img src={dior} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={dolphinShirt} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={dolphin} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={earthSpin} alt="" className="stock" />
-            </div>
-
-            <div className="box">
-              <img src={handShoes} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={flowerPink} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={flowerPurple} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={heart} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={horse} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={india} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={lillypad} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={maddieSelfie} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={maddieSkii} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={maddie} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={mensCup} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={moon} alt="" className="stock" />
-            </div>
-          </div>
-          <div className="int_row">
-            <div className="box">
-              <img src={moped} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={sage} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={rock} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={solenneFloor} alt="" className="stock" />
-            </div>
-            <div className="box">
-              <img src={solenneSelfie} alt="" className="stock" />
-            </div> */}
           </div>
         </div>
       </div>

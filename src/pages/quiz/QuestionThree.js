@@ -88,16 +88,12 @@ export default function QuestionThree() {
               <div className="marquee--inner">
                 <Link to="/four" className="words">
                   <span>
-                    <img src={relax} className="orb"></img>
-                    <img src={slow} className="orb"></img>
                     <img src={three} className="orb"></img>
                     <img src={me} className="orb"></img>
                     <img src={praise} className="orb"></img>
                     <img src={self} className="orb"></img>
                   </span>
                   <span>
-                    <img src={relax} className="orb"></img>
-                    <img src={slow} className="orb"></img>
                     <img src={three} className="orb"></img>
                     <img src={me} className="orb"></img>
                     <img src={praise} className="orb"></img>
