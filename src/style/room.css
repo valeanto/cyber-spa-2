@@ -33,7 +33,6 @@
   position: relative;
 }
 .int_row:nth-child(1) .box:nth-child(1) {
- 
   left: calc(100vw - 30%);
   top: calc(100vh - 90%);
 }
@@ -213,7 +212,6 @@
   height: 100%;
   object-fit: contain;
 }
-.
 .right {
   right: 0rem;
 }

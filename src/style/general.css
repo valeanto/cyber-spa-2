@@ -20,7 +20,7 @@ body {
 }
 
 .petals_container img {
-  /* border: 1px solid red; */
+  transform: scale(0.8);
 }
 .petals_container img:nth-child(1) {
   animation-delay: 0.7s;
