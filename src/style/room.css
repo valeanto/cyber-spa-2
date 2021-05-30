@@ -334,32 +334,23 @@
   display: inline-block;
   margin-right: 100px;
   margin-bottom: 200px;
-  animation: dot 15s infinite alternate;
+  animation: dot 15s infinite alternate ease-in-out;
 }
 
-.dot:nth-child(1) {
-  /* border: 1px solid blue; */
-}
 .dot:nth-child(2) {
-  /* border: 1px solid red; */
   left: 800px;
 }
 .dot:nth-child(3) {
-  /* border: 1px solid green; */
   left: 300px;
   top: 100px;
 }
 .dot:nth-child(4) {
-  /* border: 1px solid purple; */
   top: 100px;
 }
 .dot:nth-child(5) {
-  /* border: 1px solid orange; */
   left: 1200px;
 }
-.dot:nth-child(6) {
-  /* border: 1px solid pink; */
-}
+
 @keyframes dot {
   0% {
     transform: translateX(0px);
