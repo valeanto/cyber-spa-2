@@ -42,16 +42,14 @@ export default function Landing() {
         loop={true}
         playing={true}
       />
-      <Link to="/instructions" className="landing-link logo-container">
-        <img src={retreatLogo} alt="" />
-        <img src={enterLogo} alt="" />
-        {/* <img src={starImage} alt="" className="star" id='star-one'/> */}
+      <Link to="/instructions" className="landing-link ">
+        <div className="logo-container">
+          <img src={retreatLogo} alt="" />
+          <img src={enterLogo} alt="" />
+        </div>
         <img src={starImage} alt="" className="star" id="star-two" />
         <img src={starImage} alt="" className="star" id="star-three" />
         <img src={starImage} alt="" className="star" id="star-four" />
-        {/* <img src={starImage} alt="" className="star" id="star-five" />
-        <img src={starImage} alt="" className="star" id="star-six" />
-        <img src={starImage} alt="" className="star" id="star-seven" /> */}
       </Link>
       <div className="landing_footer">
         <div className="item">
