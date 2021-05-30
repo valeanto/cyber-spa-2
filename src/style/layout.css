@@ -77,7 +77,6 @@ body {
 .logo-container:hover img:nth-child(2) {
   display: block;
   opacity: 1;
-  transform: translateX(-1.4px) translateY(-1px) scale(1.04);
 }
 .landing_footer {
   /* border: 1px solid black; */
