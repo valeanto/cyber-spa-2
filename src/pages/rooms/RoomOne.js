@@ -58,11 +58,11 @@ export default function RoomOne() {
     setTimeout(() => {
       let affirmationBox = document.querySelector(".affirmationLoad");
       affirmationBox.style.opacity = "0";
-    }, 8000);
+    }, 6000);
     setTimeout(() => {
       let affirmationImg = document.querySelector(".affirmationBox");
       affirmationImg.style.opacity = "1";
-    }, 8000);
+    }, 6000);
   }
 
   return (
@@ -112,16 +112,7 @@ export default function RoomOne() {
         <div className="affirmationBox">
           <img src={affirmationImg} alt="" className="" />
         </div>
-        {/* <div className="a_container" onClick={changeImage}>
-          <img src={`${affirmations[0]}`} alt="" />
-        </div> */}
-        {/* {projects.map((item) => (
-          <div className="affirmation" onClick={() => console.log('a')}>
-            <img src={`${item}`} alt="" />
-          </div>
-        ))} */}
       </div>
-      {/* <div className="soundToggle"> */}
       <div className="sound">
         <button onClick={toggle} className="sound-icon-con">
           {playing ? (
@@ -131,8 +122,6 @@ export default function RoomOne() {
           )}
         </button>
       </div>
-      {/* <button onClick={toggle}>{playing ? "Pause" : "Play"}</button> */}
-      {/* </div> */}
     </div>
   );
 }
