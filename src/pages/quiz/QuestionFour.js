@@ -3,14 +3,11 @@ import { Link, useHistory } from "react-router-dom";
 import ReactPlayer from "react-player";
 import quizOneBackground from "../../images/bg/quiz_bg.mp4";
 import title from "../../images/quiz/q4/title.png";
+import retreatLogo from "../../images/quiz/q2/retreat.png";
 
 import candle from "../../images/quiz/q4/candle.png";
 import getaway from "../../images/quiz/q4/getaway.png";
 import mirror from "../../images/quiz/q4/mirror.png";
-
-import loverDoor from "../../images/quiz/q4/lover-door.png";
-import getawayDoor from "../../images/quiz/q4/getaway-door.png";
-import exhaleDoor from "../../images/quiz/q4/exhale-door.png";
 
 import onloadLover from "../../images/rooms/r1/onload.mp4";
 import onloadExhale from "../../images/rooms/r2/onload.mp4";
@@ -71,6 +68,8 @@ export default function QuestionFour() {
 
   return (
     <div className="questionContainer single">
+      <img src={retreatLogo} alt={title} className="retreatLogo" />
+
       <ReactPlayer
         className="react-player quiz-video"
         url={quizOneBackground}

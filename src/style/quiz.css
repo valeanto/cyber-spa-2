@@ -297,6 +297,10 @@ textarea {
   height: 100px;
   object-fit: contain;
   position: absolute;
+  opacity:0.8;
+}
+.retreatLogo:hover{
+  opacity:1;
 }
 
 input:-webkit-autofill,

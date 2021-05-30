@@ -207,14 +207,13 @@
 .d-container {
   position: absolute;
   height: 100%;
-
   padding: 0 1rem;
 }
 .d-container img {
-  /* position: absolute; */
   height: 100%;
   object-fit: contain;
 }
+.
 .right {
   right: 0rem;
 }

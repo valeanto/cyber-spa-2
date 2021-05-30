@@ -79,7 +79,7 @@ export default function RoomOne() {
       <div className="r_content">
         <Link to="/">
           <div className="logo">
-            <img src={retreatLogo} alt="" />
+            <img src={retreatLogo} alt="" className="retreatLogo" />
           </div>
         </Link>
         <div className="nav-container">
